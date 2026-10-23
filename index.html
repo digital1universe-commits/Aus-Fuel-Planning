@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="theme-color" content="#070d14"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-180.png"><title>Fuel & Holding — Phase Deck + Day Plan + Descent v18.4</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="theme-color" content="#070d14"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-180.png"><title>Fuel & Holding — Phase Deck + Day Plan + Descent v19.0</title><style>
 :root{--text:#f5f7fa;--muted:#b7c3d1;--border:#34495f;--panel:#101b29;--card:#172638;--accent:#f0a11b;--accentbg:#4b350d;--ok:#4ecb8d;--warn:#e0a72f;--bad:#ff6b6b;--book:#7bd8ff}*{box-sizing:border-box;min-width:0}html,body{margin:0;padding:0;background:#070d14;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;-webkit-text-size-adjust:100%}body{padding:12px}button,input{font:inherit}button{-webkit-tap-highlight-color:transparent}.uiSwitch{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;margin-bottom:10px}.uiSwitch button{min-height:50px;border:1px solid var(--border);border-radius:10px;background:transparent;color:var(--text);font-size:13px;font-weight:900;padding:8px}.uiSwitch button span{display:block;font-size:9px;color:var(--muted);font-weight:700;margin-top:3px}.uiSwitch button.on{background:var(--accentbg);border-color:var(--accent)}.view{display:none}.view.on{display:block}.header{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;flex-wrap:wrap;margin-bottom:10px}.title{font-size:20px;font-weight:950}.subtitle{font-size:10px;color:var(--muted);margin-top:2px}.panel{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:13px;margin-bottom:10px}.card{background:var(--card);border:1px solid var(--border);border-radius:11px;padding:11px}.decision{border-color:rgba(224,167,47,.6)}.sectionTitle,.k{font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}.sectionTitle{margin-bottom:9px}.v{font-size:26px;font-weight:950;line-height:1.05;margin-top:4px;overflow-wrap:anywhere}.hm{font-size:11px;font-weight:800;color:var(--muted);margin-top:4px}.detail{font-size:9px;line-height:1.3;color:var(--muted);margin-top:6px}.cons{font-size:9px;line-height:1.3;color:var(--warn);font-weight:900;margin-top:6px}.adv{font-size:9px;line-height:1.3;color:var(--book);font-weight:900;margin-top:4px}.redNote{font-size:9px;line-height:1.3;font-weight:900;color:var(--bad);margin-top:7px;padding-top:7px;border-top:1px solid var(--border)}.capabilityCallout{margin-top:8px;padding:8px;border:1px solid var(--accent);border-radius:8px;background:rgba(240,161,27,.10);font-size:9px;font-weight:900;line-height:1.3;color:var(--text)}
 .capTitle{font-size:9px;font-weight:950;color:var(--warn);text-transform:uppercase;margin-bottom:5px}
 .capRow{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:7px;align-items:center;padding:5px 0;border-top:1px solid rgba(224,167,47,.28)}
@@ -19,8 +19,16 @@
 .ladderTable{display:grid;grid-template-columns:repeat(auto-fill,minmax(88px,1fr));gap:5px;margin-top:8px}.ladderCell{border:1px solid var(--border);border-radius:8px;padding:6px 4px;text-align:center}.ladderCell .alt{font-size:9px;color:var(--muted);font-weight:900}.ladderCell .nm{font-size:16px;font-weight:950;margin-top:2px}.ladderCell.tod{border-color:var(--accent)}
 .rulesBox{margin-top:9px;padding:9px 11px;border:1px dashed var(--border);border-radius:10px;font-size:9px;line-height:1.5;color:var(--muted)}.rulesBox b{color:var(--text)}
 @media(max-width:760px){.descGrid{grid-template-columns:1fr}.descTiles{grid-template-columns:1fr 1fr}}@media(max-width:440px){.descTiles{grid-template-columns:1fr 1fr}.gate{grid-template-columns:74px minmax(0,1fr)}}
+.timingBox{margin-top:8px;padding:9px 10px;border:1px solid var(--border);border-radius:10px;background:rgba(123,216,255,.05)}.timingGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:6px}.tTile{border:1px solid var(--border);border-radius:8px;padding:7px 8px;background:var(--card)}.tTile .tv{font-size:20px;font-weight:950;line-height:1.05;margin-top:3px;font-variant-numeric:tabular-nums}.tTile .ts{font-size:8px;color:var(--muted);font-weight:900;margin-top:3px;text-transform:uppercase}.tTile.key{border-color:var(--accent)}.tafRes{margin-top:7px;font-size:10px;font-weight:900;line-height:1.4}.tafRes.ok{color:var(--ok)}.tafRes.bad{color:var(--bad)}
+.altChk{margin-top:9px;border:1px dashed var(--border);border-radius:10px;padding:10px}.altChk .seg button{min-height:42px;font-size:10px}.altChkGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:6px}.verdict{margin-top:9px;padding:9px 11px;border-radius:9px;border:1px solid var(--border);font-size:11px;font-weight:950;line-height:1.4}.verdict.ok{border-color:rgba(78,203,141,.6);background:rgba(78,203,141,.10)}.verdict.hold{border-color:rgba(224,167,47,.7);background:rgba(224,167,47,.12);color:var(--warn)}.verdict.alt{border-color:rgba(255,107,107,.7);background:rgba(255,107,107,.12);color:var(--bad)}.verdict small{display:block;font-weight:800;color:var(--muted);margin-top:4px;font-size:9px;text-transform:none}
+.calcLine{grid-column:1/-1;display:none;grid-template-columns:repeat(4,minmax(0,1fr)) auto;gap:6px;align-items:end;padding:4px 0 6px 34px}.dayRow.calcOpen .calcLine{display:grid}.calcLine label{font-size:8px;margin-bottom:2px}.calcLine input{min-height:38px;font-size:14px;padding:4px 7px}.calcOut{grid-column:1/-1;font-size:9px;color:var(--muted);line-height:1.4;padding-left:34px;display:none}.dayRow.calcOpen .calcOut{display:block}.calcOut b{color:var(--text)}.useBtn{min-height:38px;padding:0 10px;border:1px solid var(--accent);border-radius:8px;background:transparent;color:var(--accent);font-size:9px;font-weight:950;white-space:nowrap}
+.preGrid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:9px}.preList{display:grid;gap:3px}.preItem{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;padding:5px 8px;border-bottom:1px solid var(--border);font-size:10px}.preItem b{font-variant-numeric:tabular-nums}.preItem.total{border-top:2px solid var(--accent);border-bottom:0;font-size:12px;font-weight:950;padding-top:7px}.preItem small{display:block;font-size:8px;color:var(--muted);font-weight:800}.preBig{border:1px solid var(--accent);border-radius:10px;padding:10px;background:var(--card)}.preBig .v{font-size:30px}.preBig .hm{margin-top:4px}
+.daysList{display:grid;gap:5px;margin-top:8px}.dayItem{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:6px;align-items:center;padding:6px 8px;border:1px solid var(--border);border-radius:9px;background:var(--card);font-size:10px}.dayItem b{display:block;font-size:12px}.dayItem small{color:var(--muted);font-weight:800}.miniBtn{min-height:34px;padding:0 10px;border:1px solid var(--border);border-radius:7px;background:transparent;color:var(--text);font-size:9px;font-weight:950}.miniBtn.danger{border-color:rgba(255,107,107,.6);color:var(--bad)}.miniBtn.go{border-color:var(--accent);color:var(--accent)}
+textarea{width:100%;min-height:64px;border:1px solid var(--border);border-radius:8px;background:transparent;color:var(--text);font:inherit;font-size:11px;padding:7px 9px;outline:none;resize:vertical}textarea:focus{border-color:var(--accent)}
+.pnrGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:8px}
+@media(max-width:760px){.timingGrid{grid-template-columns:1fr 1fr}.altChkGrid{grid-template-columns:1fr}.calcLine{grid-template-columns:1fr 1fr}.preGrid{grid-template-columns:1fr}.pnrGrid{grid-template-columns:1fr 1fr}}
 .dayBanner{display:none;margin-bottom:10px;padding:9px 12px;border:1px solid #7b91ff;border-radius:10px;background:rgba(123,145,255,.10);font-size:10px;font-weight:900;line-height:1.4}.dayBanner.show{display:block}.dayBanner b{font-size:13px;color:#aebbff}
-.dayHead,.dayRow{display:grid;grid-template-columns:28px minmax(70px,1fr) 86px 86px 74px 86px 72px 100px;gap:6px;align-items:center}
+.dayHead,.dayRow{display:grid;grid-template-columns:28px minmax(60px,1fr) 82px 82px 66px 80px 66px 62px 96px;gap:6px;align-items:center}
 .dayHead{font-size:8px;font-weight:950;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;padding:0 2px 4px}
 .dayRow{padding:5px 4px;border:1px solid transparent;border-radius:10px}.dayRow.isCur{border-color:var(--accent);background:rgba(240,161,27,.08)}.dayRow.done{opacity:.45}
 .dayRow .n{font-size:14px;font-weight:950;text-align:center;color:var(--muted)}.dayRow input{min-height:44px;font-size:15px;padding:6px 8px}
@@ -33,7 +41,7 @@
 .ladName{font-size:14px;font-weight:950}.ladName small{display:block;font-size:8px;color:var(--muted);text-transform:uppercase;margin-top:2px;font-weight:900}
 .ladCell .k{margin-bottom:2px}.ladBig{font-size:19px;font-weight:950;line-height:1.05}.ladSub{font-size:9px;color:var(--muted);margin-top:3px;line-height:1.35}.ladSub b{color:var(--text)}.okT{color:var(--ok)}.badT{color:var(--bad)}
 .ladEnd{padding:9px 10px;border:1px dashed var(--border);border-radius:10px;font-size:10px;font-weight:900;line-height:1.4}
-@media(max-width:760px){.loadedNote{grid-template-columns:1fr}.dayHead{display:none}.dayRow{grid-template-columns:24px 1fr 80px 80px}.sp{display:grid;grid-column:1/-1;grid-template-columns:repeat(4,1fr);gap:6px}.ladRow{grid-template-columns:1fr}}
+@media(max-width:760px){.loadedNote{grid-template-columns:1fr}.dayHead{display:none}.dayRow{grid-template-columns:24px 1fr 80px 80px}.sp{display:grid;grid-column:1/-1;grid-template-columns:repeat(5,1fr);gap:6px}.ladRow{grid-template-columns:1fr}}
 .returnCapacityWide{container-type:inline-size}.tradeWrap{display:grid;grid-template-columns:1fr 1fr;gap:0 12px;margin-top:6px}.tradeWrap .tradeTable{margin-top:0}.tradeWrap .tradeTable+.tradeTable{border-left:1px solid rgba(224,167,47,.28);padding-left:12px}.tradeWrap .tradeHold{font-size:13px}.tradeWrap .tradeArrow{font-size:10px}.tradeWrap .tradeArrow b{font-size:15px;margin:0 3px}.tradeWrap .tradeTable>div{padding:6px 6px}@container (max-width:520px){.tradeWrap{grid-template-columns:1fr}.tradeWrap .tradeTable+.tradeTable{border-left:0;padding-left:0;border-top:1px solid rgba(224,167,47,.28);margin-top:4px;padding-top:4px}}
 .tradeTable{display:grid;grid-template-columns:auto 1fr;gap:0;margin-top:6px}.tradeTable .selRow{background:rgba(240,161,27,.14)}.tradeTable .naRow{color:var(--bad)}.tradeTable .naRow b{color:var(--bad)}.tradeTable>div{padding:7px 8px;border-top:1px solid rgba(224,167,47,.28);display:flex;align-items:center}.tradeTable>div:nth-child(-n+2){border-top:0;padding-top:0}.tradeHold{font-size:15px;font-weight:950;white-space:nowrap;justify-content:flex-end}.tradeHold small{font-size:8px;font-weight:900;color:var(--muted);margin-left:5px;text-transform:uppercase}.tradeArrow{font-size:11px;font-weight:950;text-transform:uppercase;line-height:1.3;white-space:nowrap}.tradeArrow b{font-size:16px;margin:0 4px}.tradeArrow .pl{font-size:7px;color:var(--warn);margin-left:6px;border:1px solid rgba(224,167,47,.5);border-radius:4px;padding:1px 4px}.tradeHead{font-size:8px;font-weight:950;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;padding-bottom:3px!important;border-top:0!important}.routeCoreRow{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:7px;align-items:start}.routeCoreRow label{font-size:9px;line-height:1.15;min-height:21px}.routeCoreRow input{min-height:42px;font-size:17px}.routeCoreRow .unitRow{grid-template-columns:minmax(0,1fr) 44px}.routeCoreRow .unit{font-size:9px}.routeCoreRow .detail{font-size:8px;margin-top:4px}.unitRow{display:grid;grid-template-columns:minmax(0,1fr) 60px;gap:6px}.unit{display:flex;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:8px;font-size:10px;font-weight:900;color:var(--muted);white-space:nowrap}.timeRow{display:grid;grid-template-columns:1fr 1fr;gap:6px}.seg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}.seg.two{grid-template-columns:1fr 1fr}.seg.three{grid-template-columns:repeat(3,minmax(0,1fr))}.returnWeatherHold{margin-top:8px;padding:8px;border:1px solid var(--border);border-radius:9px;background:rgba(123,145,255,.06)}
 .returnWeatherHold .seg button{min-height:42px}
@@ -89,7 +97,17 @@
 <div class="detail" data-out="landingDecisionBreakdown">—</div>
 <div class="cons" data-out="landDecisionCons">—</div>
 <div class="detail">Leg fuel <b data-out="totalLegFuel">—</b> · contingency <b data-out="outboundContingency">—</b></div>
-</div></div><div class="approachInstruction">EACH BOX MEANS: HOLD FOR THE FULL TIME SHOWN → THEN THIS MANY COMPLETE APPROACHES ARE STILL AVAILABLE WITH FINAL RESERVE PROTECTED. AMBER = CONTINGENCY ALSO PROTECTED.</div><div class="approachGrid"><div class="approachMini"><div class="aLabel">15 min</div><div class="aFob" data-out="fob15">—</div><div class="aNum" data-out="apps15">—</div><div class="aTiny">approaches after hold</div><div class="aCons" data-out="cons15">—</div><div class="approachMeaning" data-out="meaning15">—</div></div><div class="approachMini"><div class="aLabel">30 min</div><div class="aFob" data-out="fob30">—</div><div class="aNum" data-out="apps30">—</div><div class="aTiny">approaches after hold</div><div class="aCons" data-out="cons30">—</div><div class="approachMeaning" data-out="meaning30">—</div></div><div class="approachMini"><div class="aLabel">45 min</div><div class="aFob" data-out="fob45">—</div><div class="aNum" data-out="apps45">—</div><div class="aTiny">approaches after hold</div><div class="aCons" data-out="cons45">—</div><div class="approachMeaning" data-out="meaning45">—</div></div><div class="approachMini"><div class="aLabel">60 min</div><div class="aFob" data-out="fob60">—</div><div class="aNum" data-out="apps60">—</div><div class="aTiny">approaches after hold</div><div class="aCons" data-out="cons60">—</div><div class="approachMeaning" data-out="meaning60">—</div></div><div class="approachMini"><div class="aLabel">Max hold</div><div class="aFob" data-out="fobMax">—</div><div class="aNum" data-out="appsMax">—</div><div class="aTiny">approaches after max hold</div><div class="aCons" data-out="consMax">—</div><div class="approachMeaning" data-out="meaningMax">—</div></div><div class="approachMini bingoMini"><div class="aLabel">MINIMUM FUEL — LAND NOW</div><div class="aFob" data-out="bingoFuel">—</div><div class="aNum">1</div><div class="aTiny">APPROACH ONLY</div><div class="bingoCommand" data-out="bingoCommand">—</div></div></div></section>
+</div></div><div class="approachInstruction">EACH BOX MEANS: HOLD FOR THE FULL TIME SHOWN → THEN THIS MANY COMPLETE APPROACHES ARE STILL AVAILABLE WITH FINAL RESERVE PROTECTED. AMBER = CONTINGENCY ALSO PROTECTED.</div><div class="approachGrid"><div class="approachMini"><div class="aLabel">15 min</div><div class="aFob" data-out="fob15">—</div><div class="aNum" data-out="apps15">—</div><div class="aTiny">approaches after hold</div><div class="aCons" data-out="cons15">—</div><div class="approachMeaning" data-out="meaning15">—</div></div><div class="approachMini"><div class="aLabel">30 min</div><div class="aFob" data-out="fob30">—</div><div class="aNum" data-out="apps30">—</div><div class="aTiny">approaches after hold</div><div class="aCons" data-out="cons30">—</div><div class="approachMeaning" data-out="meaning30">—</div></div><div class="approachMini"><div class="aLabel">45 min</div><div class="aFob" data-out="fob45">—</div><div class="aNum" data-out="apps45">—</div><div class="aTiny">approaches after hold</div><div class="aCons" data-out="cons45">—</div><div class="approachMeaning" data-out="meaning45">—</div></div><div class="approachMini"><div class="aLabel">60 min</div><div class="aFob" data-out="fob60">—</div><div class="aNum" data-out="apps60">—</div><div class="aTiny">approaches after hold</div><div class="aCons" data-out="cons60">—</div><div class="approachMeaning" data-out="meaning60">—</div></div><div class="approachMini"><div class="aLabel">Max hold</div><div class="aFob" data-out="fobMax">—</div><div class="aNum" data-out="appsMax">—</div><div class="aTiny">approaches after max hold</div><div class="aCons" data-out="consMax">—</div><div class="approachMeaning" data-out="meaningMax">—</div></div><div class="approachMini bingoMini"><div class="aLabel">MINIMUM FUEL — LAND NOW</div><div class="aFob" data-out="bingoFuel">—</div><div class="aNum">1</div><div class="aTiny">APPROACH ONLY</div><div class="bingoCommand" data-out="bingoCommand">—</div></div></div>
+<div class="timingBox"><div class="k">Timing · local clock (book figures)</div>
+<div class="timingGrid">
+<div class="tTile"><div class="k">Now</div><div class="tv" data-out="tNow">—</div><div class="ts" data-out="tNowZ">—</div></div>
+<div class="tTile"><div class="k">ETA destination</div><div class="tv" data-out="tEta">—</div><div class="ts">now + time to run</div></div>
+<div class="tTile key"><div class="k">Hold &amp; land until</div><div class="tv" data-out="tHoldLand">—</div><div class="ts" data-out="tHoldLandS">—</div></div>
+<div class="tTile"><div class="k">Hold then return until</div><div class="tv" data-out="tHoldReturn">—</div><div class="ts" data-out="tHoldReturnS">—</div></div>
+<div class="tTile"><div class="k">Hold then alternate until</div><div class="tv" data-out="tHoldAlt">—</div><div class="ts" data-out="tHoldAltS">—</div></div>
+<div><label>TAF INTER / TEMPO ends</label><div class="unitRow"><input data-field="tafEndZ" placeholder="HHMM" maxlength="4" inputmode="numeric"><div class="unit">UTC</div></div></div>
+</div>
+<div class="tafRes" data-out="tTaf">—</div></div></section>
 <section class="panel phaseBlock return"><div class="sectionTitle">4 · Return to Departure AD</div>
 <div class="bigQ">How many approaches will be flown at the destination prior to returning to the departure AD?</div>
 <div class="seg bigSeg" data-choice="returnApps"><button data-val="0">0<small>Go straight back</small></button><button data-val="1">1<small>One try, then back</small></button><button data-val="2">2<small>Two tries, then back</small></button><button data-val="3">3<small>Three tries, then back</small></button></div>
@@ -145,6 +163,24 @@
 
 <div class="phaseAltSummary" data-out="altConfigSummary">—</div>
 </div>
+<div class="altChk">
+<div class="pkgBar" style="margin-top:0"><div class="pkgMain"><div class="k">Do I need an alternate or holding? · TAF check against the published alternate minima</div><div class="pkgSummary" data-out="altChkSummary">—</div></div><button type="button" class="pkgEdit" data-toggle-altchk>CHECK ▾</button></div>
+<div class="pkgSetup" data-altchk-setup>
+<div class="altChkGrid">
+<div><div class="k">TAF valid 30 min before to 60 min after ETA?</div><div class="seg two" data-choice="tafValid"><button data-val="1">YES</button><button data-val="0">NO / NO TAF</button></div></div>
+<div><div class="k">INTER / TEMPO below the alternate minima at ETA</div><div class="seg three" data-choice="tafIT"><button data-val="0">NONE</button><button data-val="30">INTER</button><button data-val="60">TEMPO</button></div></div>
+<div><label>Published alternate minima — ceiling</label><div class="unitRow"><input data-field="altMinCeil" type="number" min="0" step="100" placeholder="from chart"><div class="unit">ft</div></div></div>
+<div><label>Published alternate minima — visibility</label><div class="unitRow"><input data-field="altMinVis" type="number" min="0" step="0.1" placeholder="from chart"><div class="unit">km</div></div></div>
+<div><label>Forecast cloud base at ETA (BKN / OVC)</label><div class="unitRow"><input data-field="fcCeil" type="number" min="0" step="100" placeholder="blank = clear"><div class="unit">ft</div></div></div>
+<div><label>Forecast visibility at ETA</label><div class="unitRow"><input data-field="fcVis" type="number" min="0" step="0.1" placeholder="blank = unlimited"><div class="unit">km</div></div></div>
+<div><div class="k">Thunderstorms forecast or PROB TS</div><div class="seg two" data-choice="probTs"><button data-val="0">NO</button><button data-val="1">YES</button></div></div>
+<div><div class="k">Wind at ETA beyond limits (X-wind &gt; 20 kt / tail &gt; 10 kt)</div><div class="seg two" data-choice="windLimit"><button data-val="0">NO</button><button data-val="1">YES</button></div></div>
+<div><div class="k">Night arrival with lighting requirement not met</div><div class="seg two" data-choice="nightLight"><button data-val="0">NO / DAY</button><button data-val="1">YES</button></div></div>
+</div>
+<div class="verdict" data-out="altVerdict">—</div>
+<div class="detail">Rules as summarised from AIP ENR 1.1 (alternate aerodromes) and Part A 6.19 / 6.4.3(d); the published alternate minima come from the IAL chart (no IAP: as per AIP). Confirm against the current AIP — this is a prompt, not the authority. Wind limits FCOM 3.6 / 3.7.</div>
+</div>
+</div>
 </section></div>
 
 <section class="panel"><div class="sectionTitle">6 · Planned Hold</div><div class="phaseHoldGrid"><div class="phaseHoldInput"><label>Planned hold</label><div class="phaseHoldEntry"><input data-field="plannedHold"><div class="unit">min</div></div><div class="phaseFob" data-out="planFob">—</div><div class="detail">FOB after hold</div></div><div class="phaseOption"><div class="k">Land at Destination</div><div class="v" data-out="planLand">—</div><div class="planApproach"><strong data-out="planLandApps">—</strong>approaches at destination<div class="aCons" data-out="planLandAppsCons">—</div></div></div><div class="phaseOption"><div class="k">Return to Departure AD</div><div class="v" data-out="planReturn">—</div><div class="planApproach"><strong data-out="planReturnApps">—</strong>approaches at destination, then return</div></div><div class="phaseOption"><div class="k">Proceed to Alternate</div><div class="v" data-out="planAlt">—</div><div class="planApproach"><strong data-out="planAltApps">—</strong>approaches supported at alternate</div></div></div></section>
@@ -155,12 +191,44 @@
 <section class="panel"><div class="sectionTitle">Fuel now — shared with the Phase Deck</div><div class="inputGrid"><div><label>Fuel on board now (or planned at first departure)</label><div class="unitRow"><input data-field="fob"><div class="unit">lb</div></div></div><div><label>Current position → destination (this sector)</label><div class="unitRow"><input data-field="destTimeMin" type="number" min="0" step="1"><div class="unit">min</div></div></div></div><div class="detail">These are the same fields as on the Phase Deck. Tapping FLYING NOW on a sector pre-fills them (planned refuel figure and full sector time) — overwrite with the gauge reading and actual time to run.</div></section>
 <section class="panel"><div class="sectionTitle">Sectors in order</div>
 <div class="detail" style="margin-bottom:9px">BURN = planned trip fuel for the sector from FP3000 / AvPlan. ALT/EXTRA = alternate or other fuel to protect at that destination. APP = approach fuel at that destination (IAP / STAR / night). HOLD = INTER / TEMPO required there. FUEL = fuel available at that destination (the ladder resets there; enter the figure you plan to depart with). Tap <b>FLYING NOW</b> on the sector you are on — it loads that sector into the Phase Deck, which then keeps the fuel needed to finish the day.</div>
-<div class="dayHead"><div>#</div><div>To</div><div>Burn lb</div><div>Alt / extra lb</div><div>App</div><div>Hold there</div><div>Fuel there</div><div>Flying now</div></div>
+<div class="dayHead"><div>#</div><div>To</div><div>Burn lb</div><div>Alt / extra lb</div><div>App</div><div>Hold there</div><div>Fuel there</div><div>Calc</div><div>Flying now</div></div>
 <div class="dayRows" data-day-rows></div>
 <div class="loadedNote" data-out="dayLoaded">—</div>
 <div style="margin-top:9px;display:flex;gap:9px;align-items:center;flex-wrap:wrap"><button type="button" class="pkgEdit" data-day-clear>CLEAR DAY</button><div class="detail" style="margin:0">Variant, reserve, approach figure and holding flow come from Phase Deck section 1.</div></div>
 </section>
 <section class="panel"><div class="sectionTitle">Fuel ladder — minimum FOB at each departure, working back from the last landing</div><div data-out="dayLadder">—</div></section>
+<section class="panel"><div class="sectionTitle">Pre-flight — minimum fuel at engine start for the current sector (Part A 6.4.4.1)</div>
+<div class="preGrid">
+<div class="preList" data-out="preList">—</div>
+<div>
+<div class="preBig"><div class="k">Minimum at engine start</div><div class="v" data-out="preMin">—</div><div class="hm" data-out="preMinNote">—</div></div>
+<div class="preBig" style="margin-top:8px;border-color:var(--border)"><div class="k">Uplift required</div><div class="v" data-out="preUplift">—</div><div class="hm" data-out="preUpliftL">—</div></div>
+<div class="inputGrid" style="margin-top:8px"><div><div class="k">Cairns / Townsville arrival</div><div class="seg two" data-choice="dayCns" style="margin-top:4px"><button data-val="0">NO</button><button data-val="1">+10 MIN</button></div></div><div><label>Discretionary / extra</label><div class="unitRow"><input data-field="dayExtra" type="number" min="0" step="10"><div class="unit">lb</div></div></div></div>
+<div class="detail">Taxi + trip + approach + contingency + holding + alternate/extra + final reserve + CNS/TSV + discretionary, for the sectors up to the next fuel stop. Uplift converts at 1.74 lb per litre (Part A 0.24). Fuel on board now is the shared FOB field above.</div>
+</div>
+</div></section>
+<section class="panel"><div class="sectionTitle">Saved days &amp; share</div>
+<div class="inputGrid"><div><label>Name this day</label><input data-field="dayName" placeholder="e.g. CNS–LHR–COE–CNS Tue" maxlength="40"></div><div style="align-self:end;display:flex;gap:8px"><button type="button" class="pkgEdit" data-day-save style="flex:1">SAVE DAY</button><button type="button" class="pkgEdit" data-share-copy style="flex:1">COPY SHARE CODE</button></div></div>
+<div class="detail" data-out="daysMsg" style="margin-top:6px">Saved days stay on this iPad. A share code moves a day to another iPad: copy it here, paste it into a message, and on the other iPad paste it below and tap LOAD CODE.</div>
+<div class="daysList" data-days-list>—</div>
+<div style="margin-top:9px"><label>Share code</label><textarea data-field="shareCode" placeholder="paste a code here to load a day"></textarea><button type="button" class="pkgEdit" data-share-load style="margin-top:6px">LOAD CODE</button></div>
+</section>
+<section class="panel"><div class="sectionTitle">Over-water sector — PNR, critical point &amp; PSEA safety distance</div>
+<div class="inputGrid">
+<div><label>Sector distance</label><div class="unitRow"><input data-field="pnrDist" type="number" min="0" step="1"><div class="unit">nm</div></div></div>
+<div><label>Cruise level</label><div class="unitRow"><input data-field="pnrAlt" type="number" min="0" step="500"><div class="unit">ft</div></div><div class="detail" data-out="pnrTas">—</div></div>
+<div><label>Wind component outbound (+tail / −head)</label><div class="unitRow"><input data-field="pnrWind" type="number" step="5"><div class="unit">kt</div></div></div>
+<div><label>Usable fuel for the out-and-back</label><div class="unitRow"><input data-field="pnrFuel" type="number" min="0" step="10" placeholder="blank = FOB − reserve − approach"><div class="unit">lb</div></div></div>
+</div>
+<div class="pnrGrid">
+<div class="descTile decision"><div class="k">Critical point (equal time)</div><div class="v" data-out="cpOut">—</div><div class="hm" data-out="cpNote">—</div></div>
+<div class="descTile decision"><div class="k">Point of no return</div><div class="v" data-out="pnrOut">—</div><div class="hm" data-out="pnrNote">—</div></div>
+<div class="descTile"><div class="k">PSEA safety distance</div><div class="v" data-out="pseaOut">—</div><div class="hm" data-out="pseaNote">—</div></div>
+<div class="descTile"><div class="k">Life-raft distance</div><div class="v" data-out="raftOut">—</div><div class="hm" data-out="raftNote">—</div></div>
+</div>
+<div class="detail" data-out="pnrTrigger" style="margin-top:8px">—</div>
+<div class="detail">CP = D × GS back ÷ (GS back + GS out) (Part A 6.4.3(h) method). PNR = endurance × GS out × GS back ÷ (GS out + GS back), endurance from the usable fuel at the cruise fuel flow. PSEA safety distance = 15 min at cruise TAS + glide to 1,000 ft AGL (FCOM 7.1.2.3); glide scaled from the company figure of 18 nm from 9,000 ft (Part A 6.55.1). Still-air TAS and flow from the FCOM 10.2.2 cruise table for the variant.</div>
+</section>
 </section>
 
 <section class="view" data-view="descent">
@@ -237,10 +305,13 @@ const FLEET={
 };
 const LAND_ADVISORY=300; // FCOM 7.1.1 note: plan to land with no less than 300 lb
 
-const fields={fob:800,cruise:370,hold:300,totalLegMin:'',destTimeMin:45,returnFuel:278,altFuelReq:0,plannedHold:30,cruiseAlt:10000,aptElev:0,descGS:160,joinDist:3,iafAlt:3000,iafDist:10};
+const fields={fob:800,cruise:370,hold:300,totalLegMin:'',destTimeMin:45,returnFuel:278,altFuelReq:0,plannedHold:30,cruiseAlt:10000,aptElev:0,descGS:160,joinDist:3,iafAlt:3000,iafDist:10,tafEndZ:'',altMinCeil:'',altMinVis:'',fcCeil:'',fcVis:'',dayExtra:0,dayName:'',shareCode:'',pnrDist:0,pnrAlt:9000,pnrWind:0,pnrFuel:''};
+const TEXT_FIELDS=new Set(['tafEndZ','dayName','shareCode']);
+const BLANK_OK=new Set(['totalLegMin','altMinCeil','altMinVis','fcCeil','fcVis','pnrFuel']);
+const SIGNED=new Set(['pnrWind']);
 const DAY_MAX=8;
-const day={loadedMsg:'',current:0,sectors:Array.from({length:DAY_MAX},()=>({to:'',burn:'',extra:'',app:1,hold:0,refuel:0,refuelTo:''}))};
-const state={ui:'phase',appType:'straight',circuitHt:1000,variant:'legacy',ops:'at',finalApp:0,returnApps:0,arrApps:0,pkgOpen:false,disc:0,cns:0,returnHoldMode:0,altHoldMode:0,altApps:1};
+const day={loadedMsg:'',current:0,sectors:Array.from({length:DAY_MAX},()=>({to:'',burn:'',extra:'',app:1,hold:0,refuel:0,refuelTo:'',dist:'',alt:'',wind:'',elev:'',calcOpen:0}))};
+const state={ui:'phase',appType:'straight',circuitHt:1000,tafValid:1,tafIT:0,probTs:0,windLimit:0,nightLight:0,altChkOpen:false,dayCns:0,variant:'legacy',ops:'at',finalApp:0,returnApps:0,arrApps:0,pkgOpen:false,disc:0,cns:0,returnHoldMode:0,altHoldMode:0,altApps:1};
 
 const q=s=>[...root.querySelectorAll(s)];
 const fuel=v=>Math.round(v)+' lb';
@@ -299,7 +370,9 @@ q('[data-field]').forEach(e=>{
   if(fields[e.dataset.field]!==undefined)e.value=fields[e.dataset.field];
   e.addEventListener('input',()=>{
     const k=e.dataset.field;
-    if(k==='totalLegMin'&&e.value.trim()===''){fields[k]='';}   // optional field: blank stays blank
+    if(TEXT_FIELDS.has(k)){fields[k]=e.value;}
+    else if(BLANK_OK.has(k)&&e.value.trim()===''){fields[k]='';}   // optional field: blank stays blank
+    else if(SIGNED.has(k)){fields[k]=Number(e.value)||0;}
     else{let n=Number(e.value);if(!Number.isFinite(n)||n<0)n=0;fields[k]=n;}
     syncFields(e);
     calc();
@@ -330,8 +403,11 @@ function buildDayRows(){
        '<button type="button" class="cyc" data-day-btn="app" data-i="'+i+'">APP<small data-day-lbl="app"></small></button>'+
        '<button type="button" class="cyc" data-day-btn="hold" data-i="'+i+'">HOLD<small data-day-lbl="hold"></small></button>'+
        '<button type="button" class="cyc" data-day-btn="refuel" data-i="'+i+'">FUEL<small data-day-lbl="refuel"></small></button>'+
+       '<button type="button" class="cyc" data-day-btn="calc" data-i="'+i+'">CALC<small data-day-lbl="calc"></small></button>'+
        '<button type="button" class="curBtn" data-day-btn="current" data-i="'+i+'">FLYING NOW</button>'+
        '</div>'+
+       '<div class="calcLine"><div><label>Distance nm</label><input data-day="dist" data-i="'+i+'" type="number" min="0" step="1" placeholder="nm"></div><div><label>Cruise level ft</label><input data-day="alt" data-i="'+i+'" type="number" min="0" step="500" placeholder="ft"></div><div><label>Wind kt (+tail / −head)</label><input data-day="wind" data-i="'+i+'" type="number" step="5" placeholder="0"></div><div><label>Elev dep / dest ft</label><input data-day="elev" data-i="'+i+'" type="number" min="0" step="10" placeholder="0"></div><button type="button" class="useBtn" data-day-btn="use" data-i="'+i+'">USE</button></div>'+
+       '<div class="calcOut" data-day-lbl="calcOut">—</div>'+
        '<div class="refuelLine"><label>Refuel at <span data-day-lbl="toName"></span> — depart with</label><input data-day="refuelTo" data-i="'+i+'" type="number" min="0" step="1" placeholder="blank = uplift to minimum"><div class="unit">lb</div></div>'+
        '</div>';
   }
@@ -339,6 +415,7 @@ function buildDayRows(){
   host.querySelectorAll('input[data-day]').forEach(e=>e.addEventListener('input',()=>{
     const i=Number(e.dataset.i),k=e.dataset.day;
     if(k==='to'){day.sectors[i].to=e.value.toUpperCase().trim();}
+    else if(k==='wind'){day.sectors[i][k]=e.value.trim()===''?'':(Number(e.value)||0);}
     else{day.sectors[i][k]=e.value.trim()===''?'':Math.max(0,Number(e.value)||0);}
     syncDay();calc();
   }));
@@ -347,12 +424,15 @@ function buildDayRows(){
     if(k==='app')sec.app=sec.app?0:1;
     else if(k==='hold')sec.hold=sec.hold===0?30:(sec.hold===30?60:0);
     else if(k==='refuel')sec.refuel=sec.refuel?0:1;
+    else if(k==='calc')sec.calcOpen=sec.calcOpen?0:1;
+    else if(k==='use'){const r=sectorBurnCalc(sec);if(r&&r.total>0){sec.burn=Math.round(r.total);}}
     else if(k==='current'){loadSector(i);return;}
     syncDay();calc();
   }));
   root.querySelectorAll('[data-goto]').forEach(b=>b.addEventListener('click',()=>{const v=b.dataset.goto;showView(v);window.scrollTo(0,0);}));
   const clr=root.querySelector('[data-day-clear]');
-  if(clr)clr.addEventListener('click',()=>{day.sectors.forEach(x=>{x.to='';x.burn='';x.extra='';x.app=1;x.hold=0;x.refuel=0;x.refuelTo='';});day.current=0;day.loadedMsg='';syncDay();calc();});
+  if(clr)clr.addEventListener('click',()=>{day.sectors.forEach(x=>{x.to='';x.burn='';x.extra='';x.app=1;x.hold=0;x.refuel=0;x.refuelTo='';x.dist='';x.alt='';x.wind='';x.elev='';x.calcOpen=0;});day.current=0;day.loadedMsg='';syncDay();calc();});
+  bindDaysPanel();
 }
 // FLYING NOW: make this the current sector and load it into the Phase Deck inputs
 function loadSector(i){
@@ -371,6 +451,57 @@ function loadSector(i){
   const note=root.querySelector('[data-out="dayLoaded"]');
   if(note){note.querySelectorAll('[data-goto]').forEach(b=>b.addEventListener('click',()=>{showView('phase');window.scrollTo(0,0);}));}
 }
+// FCOM 10.2.2 flight planning data: [fuel flow lb/hr, TAS kt, rate of climb ft/min] per 1,000 ft (A010 … A100)
+const CLIMB={
+  legacy:[[402,106,700],[400,107,666],[397,109,648],[395,111,631],[392,113,614],[390,114,596],[388,116,578],[388,118,561],[387,120,544],[385,121,526]],
+  blackhawk:[[490,106,1135],[480,107,1070],[470,109,1005],[460,111,940],[445,113,875],[430,114,810],[415,116,745],[400,118,680],[390,120,615],[380,121,550]],
+  ex:[[515,105,1250],[500,111,1200],[485,113,1100],[470,115,1000],[460,117,950],[450,118,900],[435,120,850],[425,122,800],[410,124,800],[395,126,750]]
+};
+const CRUISE={
+  legacy:[[398,153],[390,155],[381,155],[373,157],[364,159],[356,161],[348,161],[339,162],[330,161],[322,161]],
+  blackhawk:[[427,156],[420,158],[413,159],[405,161],[400,162],[395,164],[390,165],[385,167],[380,168],[375,170]],
+  ex:[[485,170],[474,173],[464,174],[453,174],[443,174],[432,174],[422,174],[412,174],[402,174],[391,174]]
+};
+const rowAt=(tbl,alt)=>tbl[Math.min(tbl.length-1,Math.max(0,Math.round(alt/1000)-1))];
+function cruiseRow(alt){return rowAt(CRUISE[state.variant]||CRUISE.legacy,alt);}
+function sectorBurnCalc(sec){
+  const D=Number(sec.dist)||0,alt=Number(sec.alt)||0,wind=Number(sec.wind)||0,elev=Number(sec.elev)||0;
+  if(!(D>0)||!(alt>elev))return null;
+  const ct=CLIMB[state.variant]||CLIMB.legacy;
+  let climbFuel=0,climbMin=0,climbNm=0;
+  for(let a=elev;a<alt;a+=1000){const top=Math.min(alt,a+1000),h=top-a,[ff,tas,roc]=rowAt(ct,(a+top)/2);const t=h/roc;climbMin+=t;climbFuel+=ff*t/60;climbNm+=Math.max(30,tas+wind)*t/60;}
+  const [ff,tas]=cruiseRow(alt);
+  const descMin=(alt-elev)/500,descFuel=ff*descMin/60,descNm=Math.max(30,tas+wind)*descMin/60;
+  let cruiseNm=D-climbNm-descNm,short=false;if(cruiseNm<0){cruiseNm=0;short=true;}
+  const cruiseMin=cruiseNm/Math.max(30,tas+wind)*60,cruiseFuel=ff*cruiseMin/60;
+  return {alt,wind,ff,tas,climbFuel,climbMin,climbNm,cruiseFuel,cruiseMin,cruiseNm,descFuel,descMin,descNm,total:climbFuel+cruiseFuel+descFuel,ete:climbMin+cruiseMin+descMin,short};
+}
+// ---------- saved days + share code (feature 4)
+const DAYS_KEY='fuelHolding.days';
+function readDays(){try{const j=localStorage.getItem(DAYS_KEY);const a=j?JSON.parse(j):[];return Array.isArray(a)?a:[];}catch(e){return null;}}
+function writeDays(a){try{localStorage.setItem(DAYS_KEY,JSON.stringify(a));return true;}catch(e){return false;}}
+const SEC_KEYS=['to','burn','extra','app','hold','refuel','refuelTo','dist','alt','wind','elev'];
+function packDay(){return day.sectors.filter(x=>x.to||Number(x.burn)>0).map(x=>{const o={};SEC_KEYS.forEach(k=>{if(x[k]!==''&&x[k]!==undefined)o[k]=x[k];});return o;});}
+function unpackDay(arr){day.sectors.forEach((x,i)=>{SEC_KEYS.forEach(k=>x[k]=(k==='app'?1:(k==='hold'||k==='refuel'?0:'')));x.calcOpen=0;if(arr[i])Object.assign(x,arr[i]);});day.current=0;day.loadedMsg='';}
+function encodeShare(){try{return 'FH1:'+btoa(unescape(encodeURIComponent(JSON.stringify({v:1,s:packDay()}))));}catch(e){return '';}}
+function decodeShare(code){try{const t=code.trim();if(!t.startsWith('FH1:'))return null;const o=JSON.parse(decodeURIComponent(escape(atob(t.slice(4)))));return (o&&Array.isArray(o.s))?o.s:null;}catch(e){return null;}}
+function renderDays(){
+  const list=readDays();const host=root.querySelector('[data-days-list]');if(!host)return;
+  if(list===null){host.innerHTML='<div class="detail">Saving named days needs a page that can store data (the home-screen app). Use the share code below instead.</div>';return;}
+  if(!list.length){host.innerHTML='<div class="detail">No saved days yet. Name this day above and tap SAVE.</div>';return;}
+  host.innerHTML=list.map((d,i)=>'<div class="dayItem"><div><b>'+d.name+'</b><small>'+(d.s||[]).map(x=>x.to||'?').join(' → ')+' · '+(d.s||[]).length+' sectors · saved '+(d.at||'')+'</small></div><button type="button" class="miniBtn go" data-day-load="'+i+'">LOAD</button><button type="button" class="miniBtn danger" data-day-del="'+i+'">DELETE</button></div>').join('');
+  host.querySelectorAll('[data-day-load]').forEach(b=>b.addEventListener('click',()=>{const d=readDays()[Number(b.dataset.dayLoad)];if(d){unpackDay(d.s||[]);fields.dayName=d.name;syncDay();syncFields();calc();}}));
+  host.querySelectorAll('[data-day-del]').forEach(b=>b.addEventListener('click',()=>{const a=readDays()||[];a.splice(Number(b.dataset.dayDel),1);writeDays(a);renderDays();}));
+}
+function bindDaysPanel(){
+  const sv=root.querySelector('[data-day-save]');
+  if(sv)sv.addEventListener('click',()=>{const name=(fields.dayName||'').trim()||('Day '+new Date().toLocaleDateString());const a=readDays();if(a===null){out('daysMsg','This page cannot store saved days — use the share code.');return;}const d=new Date();const rec={name,at:d.getDate()+'/'+(d.getMonth()+1)+' '+String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0'),s:packDay()};const ix=a.findIndex(x=>x.name===name);if(ix>=0)a[ix]=rec;else a.unshift(rec);writeDays(a.slice(0,30));renderDays();out('daysMsg','Saved "'+name+'".');});
+  const cp=root.querySelector('[data-share-copy]');
+  if(cp)cp.addEventListener('click',()=>{const code=encodeShare();q('[data-field="shareCode"]').forEach(e=>e.value=code);fields.shareCode=code;const done=()=>out('daysMsg','Share code copied — paste it into a message; the other iPad pastes it here and taps LOAD CODE.');if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(code).then(done).catch(()=>{out('daysMsg','Code shown below — select and copy it.');});}else out('daysMsg','Code shown below — select and copy it.');});
+  const ld=root.querySelector('[data-share-load]');
+  if(ld)ld.addEventListener('click',()=>{const arr=decodeShare(fields.shareCode||'');if(!arr){out('daysMsg','That is not a valid share code.');return;}unpackDay(arr);syncDay();syncFields();calc();out('daysMsg','Day loaded from the share code ('+arr.length+' sectors).');});
+  renderDays();
+}
 function syncDay(){
   const APP=F().app;
   root.querySelectorAll('.dayRow').forEach(r=>{
@@ -382,6 +513,11 @@ function syncDay(){
     lbl('refuel').textContent=sec.refuel?'available':'none';
     lbl('toName').textContent=sec.to||('stop '+(i+1));
     r.classList.toggle('hasFuel',!!sec.refuel);
+    r.classList.toggle('calcOpen',!!sec.calcOpen);
+    r.querySelector('[data-day-btn="calc"]').classList.toggle('on',!!sec.calcOpen);
+    const rc=sectorBurnCalc(sec);
+    lbl('calc').textContent=rc?Math.round(rc.total)+' lb':'off';
+    lbl('calcOut').innerHTML=rc?('Climb to '+Math.round(rc.alt)+' ft: <b>'+Math.round(rc.climbFuel)+' lb</b> · '+Math.round(rc.climbMin)+' min · '+rc.climbNm.toFixed(1)+' nm → Cruise '+Math.round(rc.cruiseNm)+' nm at '+rc.ff+' lb/hr, '+rc.tas+' TAS'+(rc.wind?(rc.wind>0?' +':' ')+rc.wind+' kt':'')+': <b>'+Math.round(rc.cruiseFuel)+' lb</b> · '+Math.round(rc.cruiseMin)+' min → Descent at 500 ft/min: <b>'+Math.round(rc.descFuel)+' lb</b> · '+Math.round(rc.descMin)+' min · '+rc.descNm.toFixed(1)+' nm → <b>BURN '+Math.round(rc.total)+' lb · ETE '+Math.round(rc.ete)+' min</b>'+(rc.short?' · <span class="badT">sector too short for this level — climb and descent overlap</span>':'')+' <span style="color:var(--muted)">(FCOM 10.2.2 tables, no taxi)</span>'):'Enter distance and cruise level, then USE to copy the burn into the sector.';
     r.querySelector('[data-day-btn="app"]').classList.toggle('on',!!sec.app);
     r.querySelector('[data-day-btn="hold"]').classList.toggle('on',sec.hold>0);
     r.querySelector('[data-day-btn="refuel"]').classList.toggle('on',!!sec.refuel);
@@ -432,11 +568,111 @@ function renderLadder(d,reserve,hold,APP){
   h+='<div class="ladEnd">Ladder: each MIN FOB TO DEPART = that sector (burn + approach + 10% contingency + INTER/TEMPO + alt/extra) + every sector after it up to the next fuel stop + '+reserve+' lb reserve. Estimates assume planned burns, approaches flown, no holding used and no contingency used.</div>';
   outHtml('dayLadder',h);
 }
+// ---------- pre-flight minimum fuel at engine start for the current sector's departure (Part A 6.4.4.1)
+function renderPreflight(d,reserve,hold,APP,CMIN){
+  const f=F();
+  if(!d.active){outHtml('preList','<div class="detail">Enter the day\'s sectors — the minimum at engine start builds itself from them.</div>');out('preMin','—');out('preUplift','—');out('preUpliftL','—');return;}
+  let r=d.cur;while(r<d.n-1&&!d.secs[r].refuel)r++;
+  const span=d.secs.slice(d.cur,r+1);
+  const sum=k=>span.reduce((a,x)=>a+x[k],0);
+  const trip=sum('burn'),app=sum('app'),cont=sum('cont'),hf=sum('holdFuel'),extra=sum('extra');
+  const taxi=f.taxi,cns=state.dayCns?hold*10/60:0,disc=val('dayExtra');
+  const min=taxi+trip+app+cont+hf+extra+reserve+cns+disc;
+  const FOB=val('fob'),uplift=Math.max(0,min-FOB);
+  const legs=span.map(x=>x.to).join(' → ');
+  const item=(l,v,sub)=>'<div class="preItem"><div>'+l+(sub?'<small>'+sub+'</small>':'')+'</div><b>'+Math.round(v)+' lb</b></div>';
+  outHtml('preList',
+    item('Taxi',taxi,'FCOM 7.1.1')+
+    item('Trip',trip,'sectors '+(d.cur+1)+'–'+(r+1)+': '+legs)+
+    item('Approach',app,span.filter(x=>x.app).length+' × '+APP+' lb')+
+    item('Contingency',cont,'10% per sector, min '+CMIN+' lb')+
+    item('Holding',hf,span.filter(x=>x.holdMin).map(x=>x.to+' '+x.holdMin+' min').join(', ')||'none')+
+    item('Alternate / extra',extra,'per sector entries')+
+    item('Final reserve',reserve,state.ops==='at'?'Air Transport':'Non-air-transport')+
+    item('CNS / TSV 10 min',cns,state.dayCns?'company requirement':'not selected')+
+    item('Discretionary',disc,'PIC / client memo')+
+    '<div class="preItem total"><div>MINIMUM AT ENGINE START</div><b>'+Math.round(min)+' lb</b></div>');
+  out('preMin',Math.round(min)+' lb');
+  out('preMinNote','to the next fuel stop ('+(d.secs[r].refuel?d.secs[r].to:'end of day')+') · FOB now '+Math.round(FOB)+' lb');
+  out('preUplift',uplift>0?Math.round(uplift)+' lb':'none');
+  out('preUpliftL',uplift>0?'≈ '+Math.round(uplift/1.74)+' L · '+Math.round(uplift/2.2)+' kg (Jet A1, Part A 0.24)':'FOB already '+Math.round(FOB-min)+' lb above the minimum');
+}
+// ---------- PNR / CP / PSEA safety distance for an over-water sector (Part A 6.4.3(h), 6.55; FCOM 7.1.2.3)
+function renderPnr(reserve,APP){
+  const D=val('pnrDist'),alt=val('pnrAlt'),wind=Number(fields.pnrWind)||0,fuelIn=fields.pnrFuel;
+  const [ff,tas]=cruiseRow(Math.max(1000,alt));
+  const usable=(fuelIn===''||fuelIn===undefined)?Math.max(0,val('fob')-reserve-APP):val('pnrFuel');
+  const gsOut=Math.max(20,tas+wind),gsBack=Math.max(20,tas-wind);
+  const glide=Math.max(0,alt-1000)/8000*18;                                  // Part A 6.55.1: C208B 18 nm from 9,000 ft to 1,000 ft AGL
+  const psea=tas*15/60+glide,raft=tas*5/60+glide;                            // FCOM 7.1.2.3 · Part A 6.55.1
+  out('pnrTas',tas+' kt TAS · '+ff+' lb/hr at '+Math.round(alt)+' ft (FCOM 10.2.2)');
+  if(!(D>0)){out('cpOut','—');out('cpNote','enter the sector distance');out('pnrOut','—');out('pnrNote','');out('pseaOut',psea.toFixed(0)+' nm');out('pseaNote','15 min cruise ('+(tas*15/60).toFixed(0)+' nm) + glide to 1,000 ft AGL ('+glide.toFixed(0)+' nm)');out('raftOut',raft.toFixed(0)+' nm');out('raftNote','5 min cruise + glide · life rafts beyond this');out('pnrTrigger','');return;}
+  const cp=D*gsBack/(gsBack+gsOut),tCp=cp/gsOut*60;
+  const E=usable/ff,pnr=E*gsOut*gsBack/(gsOut+gsBack),tPnr=pnr/gsOut*60;
+  const ete=D/gsOut*60;
+  out('cpOut',cp.toFixed(0)+' nm');out('cpNote',Math.round(tCp)+' min after departure · '+(D-cp).toFixed(0)+' nm to run · GS out '+Math.round(gsOut)+' / back '+Math.round(gsBack));
+  out('pnrOut',pnr>=D?'beyond dest':pnr.toFixed(0)+' nm');out('pnrNote',(pnr>=D?'can turn back from anywhere on the sector':Math.round(tPnr)+' min after departure')+' · '+Math.round(usable)+' lb usable = '+(E*60).toFixed(0)+' min at '+ff+' lb/hr');
+  out('pseaOut',psea.toFixed(0)+' nm');out('pseaNote','15 min cruise ('+(tas*15/60).toFixed(0)+' nm) + glide to 1,000 ft AGL ('+glide.toFixed(0)+' nm) at '+Math.round(alt)+' ft — max distance from a suitable forced landing area');
+  out('raftOut',raft.toFixed(0)+' nm');out('raftNote','5 min cruise + glide · life rafts required beyond this from land (Part A 6.55.1)');
+  out('pnrTrigger',(ete>120||D>400)?'Sector is '+Math.round(ete)+' min / '+D+' nm — over 120 min or 400 nm from a suitable forced landing area: CP and PNR must be planned and 30-min reporting nominated (Part A 6.55.2.1).':'Sector '+Math.round(ete)+' min / '+D+' nm — below the 120 min / 400 nm over-water planning trigger (Part A 6.55.2.1); CP and PNR shown for information.');
+}
 
 q('[data-toggle-pkg]').forEach(b=>b.addEventListener('click',()=>{
   state.pkgOpen=!state.pkgOpen;
   syncPkg();
 }));
+q('[data-toggle-altchk]').forEach(b=>b.addEventListener('click',()=>{state.altChkOpen=!state.altChkOpen;syncAltChk();}));
+function syncAltChk(){
+  q('[data-altchk-setup]').forEach(e=>e.classList.toggle('open',!!state.altChkOpen));
+  q('[data-toggle-altchk]').forEach(b=>{b.classList.toggle('open',!!state.altChkOpen);b.textContent=state.altChkOpen?'DONE ▴':'CHECK ▾';});
+}
+// ---------- timing (feature 3): local clock, ETAs, hold-until, TAF INTER/TEMPO expiry
+const hhmm=d=>String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');
+const hhmmZ=d=>String(d.getUTCHours()).padStart(2,'0')+String(d.getUTCMinutes()).padStart(2,'0')+'Z';
+function renderTiming(destMin,holdLandBook,landDiffBook,holdReturn,returnDiff,hasReturn,holdAlt,altDiff,hasAlt){
+  const now=new Date(),eta=new Date(now.getTime()+destMin*60000);
+  out('tNow',hhmm(now));out('tNowZ',hhmmZ(now)+' · local '+Intl.DateTimeFormat().resolvedOptions().timeZone);
+  out('tEta',hhmm(eta));
+  const until=(ok,mins)=>ok&&mins>=0?hhmm(new Date(eta.getTime()+Math.floor(mins)*60000)):'—';
+  out('tHoldLand',until(landDiffBook>=0,holdLandBook));out('tHoldLandS',landDiffBook>=0?Math.floor(holdLandBook)+' min after arrival · reserve only':'below minimum');
+  out('tHoldReturn',hasReturn?until(returnDiff>=0,holdReturn):'—');out('tHoldReturnS',!hasReturn?'no return entered':(returnDiff>=0?'then depart for the departure AD':'return not available'));
+  out('tHoldAlt',hasAlt?until(altDiff>=0,holdAlt):'—');out('tHoldAltS',!hasAlt?'no alternate entered':(altDiff>=0?'then divert':'alternate not available'));
+  const raw=String(fields.tafEndZ||'').replace(/[^0-9]/g,'');
+  const el=q('[data-out="tTaf"]');
+  if(raw.length!==4){out('tTaf','Enter the end of the TAF INTER / TEMPO period (UTC, HHMM) to see whether you can hold it out at the destination.');el.forEach(e=>e.className='tafRes');return;}
+  const hh=Number(raw.slice(0,2)),mm=Number(raw.slice(2));
+  if(hh>23||mm>59){out('tTaf','Time must be HHMM UTC.');el.forEach(e=>e.className='tafRes');return;}
+  let end=new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate(),hh,mm));
+  if(end.getTime()<now.getTime()-6*3600000)end=new Date(end.getTime()+86400000);     // period ends tomorrow UTC
+  const needMin=Math.ceil((end.getTime()-eta.getTime())/60000);
+  if(needMin<=0){out('tTaf','INTER / TEMPO ends '+raw+'Z = '+hhmm(end)+' local, before your ETA '+hhmm(eta)+' — no holding needed for it.');el.forEach(e=>e.className='tafRes ok');return;}
+  const have=landDiffBook>=0?Math.floor(holdLandBook):0;
+  const haveRet=hasReturn&&returnDiff>=0?Math.floor(holdReturn):null;
+  let msg='INTER / TEMPO ends '+raw+'Z = '+hhmm(end)+' local → hold '+needMin+' min after arrival. Hold & land allows '+have+' min → '+(have>=needMin?'OK, you can wait it out':'NOT ENOUGH — short '+(needMin-have)+' min');
+  if(haveRet!==null)msg+='. With the return protected: '+haveRet+' min → '+(haveRet>=needMin?'OK':'cannot wait it out and still return');
+  out('tTaf',msg+'.');el.forEach(e=>e.className='tafRes '+(have>=needMin?'ok':'bad'));
+}
+// ---------- alternate / holding helper (feature 8)
+function renderAltCheck(){
+  const reasonsAlt=[],reasonsHold=[];
+  if(state.tafValid===0)reasonsAlt.push('no TAF valid −30/+60 min around ETA (Part A 6.19(d))');
+  const minC=fields.altMinCeil===''?null:val('altMinCeil'),minV=fields.altMinVis===''?null:val('altMinVis');
+  const fcC=fields.fcCeil===''?null:val('fcCeil'),fcV=fields.fcVis===''?null:val('fcVis');
+  const below=(minC!==null&&fcC!==null&&fcC<minC)||(minV!==null&&fcV!==null&&fcV<minV);
+  if(below){
+    if(state.tafIT===30)reasonsHold.push('INTER below the alternate minima → 30 min holding');
+    else if(state.tafIT===60)reasonsHold.push('TEMPO below the alternate minima → 60 min holding');
+    else reasonsAlt.push('forecast '+(fcC!==null&&minC!==null&&fcC<minC?'cloud '+fcC+' ft below the '+minC+' ft minimum':'')+(fcV!==null&&minV!==null&&fcV<minV?(fcC!==null&&minC!==null&&fcC<minC?' and ':'')+'visibility '+fcV+' km below the '+minV+' km minimum':'')+' for the whole period');
+  }else if(state.tafIT>0)reasonsHold.push((state.tafIT===30?'INTER → 30':'TEMPO → 60')+' min holding (you flagged INTER/TEMPO below minima)');
+  if(state.probTs)reasonsHold.push('thunderstorms / PROB TS → holding fuel ('+(state.tafIT===60?'60':'30')+' min)');
+  if(state.windLimit)reasonsAlt.push('wind at ETA beyond the C208 limits (X-wind 20 kt / tail 10 kt, FCOM 3.6–3.7)');
+  if(state.nightLight)reasonsAlt.push('night lighting requirement not met');
+  let cls='ok',title='No alternate or holding indicated',body='Forecast at ETA is at or above the published alternate minima with a valid TAF.';
+  if(reasonsAlt.length){cls='alt';title='ALTERNATE REQUIRED';body=reasonsAlt.join(' · ')+(reasonsHold.length?' · also: '+reasonsHold.join(' · '):'');}
+  else if(reasonsHold.length){cls='hold';const m=Math.max(...reasonsHold.map(r=>r.includes('60')?60:30));title='HOLDING FUEL REQUIRED — '+m+' MIN';body=reasonsHold.join(' · ')+'. Set the matching INTER/TEMPO hold on this sector in the Day Plan (and at the return AD in section 4 if it applies there).';}
+  q('[data-out="altVerdict"]').forEach(e=>{e.className='verdict '+cls;e.innerHTML=title+'<small>'+body+'</small>';});
+  out('altChkSummary',title+(cls==='ok'?'':' — '+(reasonsAlt[0]||reasonsHold[0])));
+}
 function syncPkg(){
   q('[data-pkg-setup]').forEach(e=>e.classList.toggle('open',!!state.pkgOpen));
   q('[data-toggle-pkg]').forEach(b=>{b.classList.toggle('open',!!state.pkgOpen);b.textContent=state.pkgOpen?'DONE ▴':'CHANGE ▾';});
@@ -539,6 +775,10 @@ function calc(){
         : (dayInfo.curSec.refuel?'fuel available at '+dayInfo.curSec.to+' — landing figures are reserve + approach only':'last sector — landing figures are reserve + approach only'))
     : '');
   renderLadder(dayInfo,reserve,hold,APP);
+  renderPreflight(dayInfo,reserve,hold,APP,CMIN);
+  renderPnr(reserve,APP);
+  renderTiming(destMin,holdLandBook,landDiffBook,holdReturn,returnDiff,hasReturn,holdAlt,altDiff,hasAlt);
+  renderAltCheck();
   outHtml('dayLoaded',day.loadedMsg||(dayOn?'Tap <b>FLYING NOW</b> on the sector you are about to fly (or are flying) to load it into the Phase Deck.':'Enter the day\'s sectors above. Sector 1 is current until you tap FLYING NOW on another.'));
   root.querySelectorAll('[data-out="dayLoaded"] [data-goto]').forEach(b=>{if(!b.dataset.bound){b.dataset.bound='1';b.addEventListener('click',()=>{showView('phase');window.scrollTo(0,0);});}});
   out('bingoFuel',fuel(minFuel)+' overhead');
@@ -899,9 +1139,12 @@ function start(hotData){
   syncChoices();
   syncCns();
   syncPkg();
+  syncAltChk();
+  renderDays();
   if(state.ui==='day'||state.ui==='phase'||state.ui==='descent')showView(state.ui);
   calc();
   lastSaved='';persist();
+  setInterval(()=>{try{calc();}catch(e){}},60000);          // minute tick for the clock
 }
 try{(window.claude&&window.claude.hot&&window.claude.hot.ready)?window.claude.hot.ready(start):start(window.claude&&window.claude.hot?window.claude.hot.data:null);}catch(e){start(null);}
 })();
