@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="theme-color" content="#070d14"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-180.png"><title>Fuel & Holding — Phase Deck + Day Plan + Descent v19.0</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="theme-color" content="#070d14"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-180.png"><title>Fuel & Holding — Phase Deck + Day Plan + Descent v19.1</title><style>
 :root{--text:#f5f7fa;--muted:#b7c3d1;--border:#34495f;--panel:#101b29;--card:#172638;--accent:#f0a11b;--accentbg:#4b350d;--ok:#4ecb8d;--warn:#e0a72f;--bad:#ff6b6b;--book:#7bd8ff}*{box-sizing:border-box;min-width:0}html,body{margin:0;padding:0;background:#070d14;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;-webkit-text-size-adjust:100%}body{padding:12px}button,input{font:inherit}button{-webkit-tap-highlight-color:transparent}.uiSwitch{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;margin-bottom:10px}.uiSwitch button{min-height:50px;border:1px solid var(--border);border-radius:10px;background:transparent;color:var(--text);font-size:13px;font-weight:900;padding:8px}.uiSwitch button span{display:block;font-size:9px;color:var(--muted);font-weight:700;margin-top:3px}.uiSwitch button.on{background:var(--accentbg);border-color:var(--accent)}.view{display:none}.view.on{display:block}.header{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;flex-wrap:wrap;margin-bottom:10px}.title{font-size:20px;font-weight:950}.subtitle{font-size:10px;color:var(--muted);margin-top:2px}.panel{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:13px;margin-bottom:10px}.card{background:var(--card);border:1px solid var(--border);border-radius:11px;padding:11px}.decision{border-color:rgba(224,167,47,.6)}.sectionTitle,.k{font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}.sectionTitle{margin-bottom:9px}.v{font-size:26px;font-weight:950;line-height:1.05;margin-top:4px;overflow-wrap:anywhere}.hm{font-size:11px;font-weight:800;color:var(--muted);margin-top:4px}.detail{font-size:9px;line-height:1.3;color:var(--muted);margin-top:6px}.cons{font-size:9px;line-height:1.3;color:var(--warn);font-weight:900;margin-top:6px}.adv{font-size:9px;line-height:1.3;color:var(--book);font-weight:900;margin-top:4px}.redNote{font-size:9px;line-height:1.3;font-weight:900;color:var(--bad);margin-top:7px;padding-top:7px;border-top:1px solid var(--border)}.capabilityCallout{margin-top:8px;padding:8px;border:1px solid var(--accent);border-radius:8px;background:rgba(240,161,27,.10);font-size:9px;font-weight:900;line-height:1.3;color:var(--text)}
 .capTitle{font-size:9px;font-weight:950;color:var(--warn);text-transform:uppercase;margin-bottom:5px}
 .capRow{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:7px;align-items:center;padding:5px 0;border-top:1px solid rgba(224,167,47,.28)}
@@ -19,14 +19,13 @@
 .ladderTable{display:grid;grid-template-columns:repeat(auto-fill,minmax(88px,1fr));gap:5px;margin-top:8px}.ladderCell{border:1px solid var(--border);border-radius:8px;padding:6px 4px;text-align:center}.ladderCell .alt{font-size:9px;color:var(--muted);font-weight:900}.ladderCell .nm{font-size:16px;font-weight:950;margin-top:2px}.ladderCell.tod{border-color:var(--accent)}
 .rulesBox{margin-top:9px;padding:9px 11px;border:1px dashed var(--border);border-radius:10px;font-size:9px;line-height:1.5;color:var(--muted)}.rulesBox b{color:var(--text)}
 @media(max-width:760px){.descGrid{grid-template-columns:1fr}.descTiles{grid-template-columns:1fr 1fr}}@media(max-width:440px){.descTiles{grid-template-columns:1fr 1fr}.gate{grid-template-columns:74px minmax(0,1fr)}}
-.timingBox{margin-top:8px;padding:9px 10px;border:1px solid var(--border);border-radius:10px;background:rgba(123,216,255,.05)}.timingGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:6px}.tTile{border:1px solid var(--border);border-radius:8px;padding:7px 8px;background:var(--card)}.tTile .tv{font-size:20px;font-weight:950;line-height:1.05;margin-top:3px;font-variant-numeric:tabular-nums}.tTile .ts{font-size:8px;color:var(--muted);font-weight:900;margin-top:3px;text-transform:uppercase}.tTile.key{border-color:var(--accent)}.tafRes{margin-top:7px;font-size:10px;font-weight:900;line-height:1.4}.tafRes.ok{color:var(--ok)}.tafRes.bad{color:var(--bad)}
 .altChk{margin-top:9px;border:1px dashed var(--border);border-radius:10px;padding:10px}.altChk .seg button{min-height:42px;font-size:10px}.altChkGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:6px}.verdict{margin-top:9px;padding:9px 11px;border-radius:9px;border:1px solid var(--border);font-size:11px;font-weight:950;line-height:1.4}.verdict.ok{border-color:rgba(78,203,141,.6);background:rgba(78,203,141,.10)}.verdict.hold{border-color:rgba(224,167,47,.7);background:rgba(224,167,47,.12);color:var(--warn)}.verdict.alt{border-color:rgba(255,107,107,.7);background:rgba(255,107,107,.12);color:var(--bad)}.verdict small{display:block;font-weight:800;color:var(--muted);margin-top:4px;font-size:9px;text-transform:none}
 .calcLine{grid-column:1/-1;display:none;grid-template-columns:repeat(4,minmax(0,1fr)) auto;gap:6px;align-items:end;padding:4px 0 6px 34px}.dayRow.calcOpen .calcLine{display:grid}.calcLine label{font-size:8px;margin-bottom:2px}.calcLine input{min-height:38px;font-size:14px;padding:4px 7px}.calcOut{grid-column:1/-1;font-size:9px;color:var(--muted);line-height:1.4;padding-left:34px;display:none}.dayRow.calcOpen .calcOut{display:block}.calcOut b{color:var(--text)}.useBtn{min-height:38px;padding:0 10px;border:1px solid var(--accent);border-radius:8px;background:transparent;color:var(--accent);font-size:9px;font-weight:950;white-space:nowrap}
 .preGrid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:9px}.preList{display:grid;gap:3px}.preItem{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;padding:5px 8px;border-bottom:1px solid var(--border);font-size:10px}.preItem b{font-variant-numeric:tabular-nums}.preItem.total{border-top:2px solid var(--accent);border-bottom:0;font-size:12px;font-weight:950;padding-top:7px}.preItem small{display:block;font-size:8px;color:var(--muted);font-weight:800}.preBig{border:1px solid var(--accent);border-radius:10px;padding:10px;background:var(--card)}.preBig .v{font-size:30px}.preBig .hm{margin-top:4px}
 .daysList{display:grid;gap:5px;margin-top:8px}.dayItem{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:6px;align-items:center;padding:6px 8px;border:1px solid var(--border);border-radius:9px;background:var(--card);font-size:10px}.dayItem b{display:block;font-size:12px}.dayItem small{color:var(--muted);font-weight:800}.miniBtn{min-height:34px;padding:0 10px;border:1px solid var(--border);border-radius:7px;background:transparent;color:var(--text);font-size:9px;font-weight:950}.miniBtn.danger{border-color:rgba(255,107,107,.6);color:var(--bad)}.miniBtn.go{border-color:var(--accent);color:var(--accent)}
 textarea{width:100%;min-height:64px;border:1px solid var(--border);border-radius:8px;background:transparent;color:var(--text);font:inherit;font-size:11px;padding:7px 9px;outline:none;resize:vertical}textarea:focus{border-color:var(--accent)}
 .pnrGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:8px}
-@media(max-width:760px){.timingGrid{grid-template-columns:1fr 1fr}.altChkGrid{grid-template-columns:1fr}.calcLine{grid-template-columns:1fr 1fr}.preGrid{grid-template-columns:1fr}.pnrGrid{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.altChkGrid{grid-template-columns:1fr}.calcLine{grid-template-columns:1fr 1fr}.preGrid{grid-template-columns:1fr}.pnrGrid{grid-template-columns:1fr 1fr}}
 .dayBanner{display:none;margin-bottom:10px;padding:9px 12px;border:1px solid #7b91ff;border-radius:10px;background:rgba(123,145,255,.10);font-size:10px;font-weight:900;line-height:1.4}.dayBanner.show{display:block}.dayBanner b{font-size:13px;color:#aebbff}
 .dayHead,.dayRow{display:grid;grid-template-columns:28px minmax(60px,1fr) 82px 82px 66px 80px 66px 62px 96px;gap:6px;align-items:center}
 .dayHead{font-size:8px;font-weight:950;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;padding:0 2px 4px}
@@ -98,16 +97,7 @@ textarea{width:100%;min-height:64px;border:1px solid var(--border);border-radius
 <div class="cons" data-out="landDecisionCons">—</div>
 <div class="detail">Leg fuel <b data-out="totalLegFuel">—</b> · contingency <b data-out="outboundContingency">—</b></div>
 </div></div><div class="approachInstruction">EACH BOX MEANS: HOLD FOR THE FULL TIME SHOWN → THEN THIS MANY COMPLETE APPROACHES ARE STILL AVAILABLE WITH FINAL RESERVE PROTECTED. AMBER = CONTINGENCY ALSO PROTECTED.</div><div class="approachGrid"><div class="approachMini"><div class="aLabel">15 min</div><div class="aFob" data-out="fob15">—</div><div class="aNum" data-out="apps15">—</div><div class="aTiny">approaches after hold</div><div class="aCons" data-out="cons15">—</div><div class="approachMeaning" data-out="meaning15">—</div></div><div class="approachMini"><div class="aLabel">30 min</div><div class="aFob" data-out="fob30">—</div><div class="aNum" data-out="apps30">—</div><div class="aTiny">approaches after hold</div><div class="aCons" data-out="cons30">—</div><div class="approachMeaning" data-out="meaning30">—</div></div><div class="approachMini"><div class="aLabel">45 min</div><div class="aFob" data-out="fob45">—</div><div class="aNum" data-out="apps45">—</div><div class="aTiny">approaches after hold</div><div class="aCons" data-out="cons45">—</div><div class="approachMeaning" data-out="meaning45">—</div></div><div class="approachMini"><div class="aLabel">60 min</div><div class="aFob" data-out="fob60">—</div><div class="aNum" data-out="apps60">—</div><div class="aTiny">approaches after hold</div><div class="aCons" data-out="cons60">—</div><div class="approachMeaning" data-out="meaning60">—</div></div><div class="approachMini"><div class="aLabel">Max hold</div><div class="aFob" data-out="fobMax">—</div><div class="aNum" data-out="appsMax">—</div><div class="aTiny">approaches after max hold</div><div class="aCons" data-out="consMax">—</div><div class="approachMeaning" data-out="meaningMax">—</div></div><div class="approachMini bingoMini"><div class="aLabel">MINIMUM FUEL — LAND NOW</div><div class="aFob" data-out="bingoFuel">—</div><div class="aNum">1</div><div class="aTiny">APPROACH ONLY</div><div class="bingoCommand" data-out="bingoCommand">—</div></div></div>
-<div class="timingBox"><div class="k">Timing · local clock (book figures)</div>
-<div class="timingGrid">
-<div class="tTile"><div class="k">Now</div><div class="tv" data-out="tNow">—</div><div class="ts" data-out="tNowZ">—</div></div>
-<div class="tTile"><div class="k">ETA destination</div><div class="tv" data-out="tEta">—</div><div class="ts">now + time to run</div></div>
-<div class="tTile key"><div class="k">Hold &amp; land until</div><div class="tv" data-out="tHoldLand">—</div><div class="ts" data-out="tHoldLandS">—</div></div>
-<div class="tTile"><div class="k">Hold then return until</div><div class="tv" data-out="tHoldReturn">—</div><div class="ts" data-out="tHoldReturnS">—</div></div>
-<div class="tTile"><div class="k">Hold then alternate until</div><div class="tv" data-out="tHoldAlt">—</div><div class="ts" data-out="tHoldAltS">—</div></div>
-<div><label>TAF INTER / TEMPO ends</label><div class="unitRow"><input data-field="tafEndZ" placeholder="HHMM" maxlength="4" inputmode="numeric"><div class="unit">UTC</div></div></div>
-</div>
-<div class="tafRes" data-out="tTaf">—</div></div></section>
+</section>
 <section class="panel phaseBlock return"><div class="sectionTitle">4 · Return to Departure AD</div>
 <div class="bigQ">How many approaches will be flown at the destination prior to returning to the departure AD?</div>
 <div class="seg bigSeg" data-choice="returnApps"><button data-val="0">0<small>Go straight back</small></button><button data-val="1">1<small>One try, then back</small></button><button data-val="2">2<small>Two tries, then back</small></button><button data-val="3">3<small>Three tries, then back</small></button></div>
@@ -305,8 +295,8 @@ const FLEET={
 };
 const LAND_ADVISORY=300; // FCOM 7.1.1 note: plan to land with no less than 300 lb
 
-const fields={fob:800,cruise:370,hold:300,totalLegMin:'',destTimeMin:45,returnFuel:278,altFuelReq:0,plannedHold:30,cruiseAlt:10000,aptElev:0,descGS:160,joinDist:3,iafAlt:3000,iafDist:10,tafEndZ:'',altMinCeil:'',altMinVis:'',fcCeil:'',fcVis:'',dayExtra:0,dayName:'',shareCode:'',pnrDist:0,pnrAlt:9000,pnrWind:0,pnrFuel:''};
-const TEXT_FIELDS=new Set(['tafEndZ','dayName','shareCode']);
+const fields={fob:800,cruise:370,hold:300,totalLegMin:'',destTimeMin:45,returnFuel:278,altFuelReq:0,plannedHold:30,cruiseAlt:10000,aptElev:0,descGS:160,joinDist:3,iafAlt:3000,iafDist:10,altMinCeil:'',altMinVis:'',fcCeil:'',fcVis:'',dayExtra:0,dayName:'',shareCode:'',pnrDist:0,pnrAlt:9000,pnrWind:0,pnrFuel:''};
+const TEXT_FIELDS=new Set(['dayName','shareCode']);
 const BLANK_OK=new Set(['totalLegMin','altMinCeil','altMinVis','fcCeil','fcVis','pnrFuel']);
 const SIGNED=new Set(['pnrWind']);
 const DAY_MAX=8;
@@ -626,32 +616,6 @@ function syncAltChk(){
   q('[data-altchk-setup]').forEach(e=>e.classList.toggle('open',!!state.altChkOpen));
   q('[data-toggle-altchk]').forEach(b=>{b.classList.toggle('open',!!state.altChkOpen);b.textContent=state.altChkOpen?'DONE ▴':'CHECK ▾';});
 }
-// ---------- timing (feature 3): local clock, ETAs, hold-until, TAF INTER/TEMPO expiry
-const hhmm=d=>String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');
-const hhmmZ=d=>String(d.getUTCHours()).padStart(2,'0')+String(d.getUTCMinutes()).padStart(2,'0')+'Z';
-function renderTiming(destMin,holdLandBook,landDiffBook,holdReturn,returnDiff,hasReturn,holdAlt,altDiff,hasAlt){
-  const now=new Date(),eta=new Date(now.getTime()+destMin*60000);
-  out('tNow',hhmm(now));out('tNowZ',hhmmZ(now)+' · local '+Intl.DateTimeFormat().resolvedOptions().timeZone);
-  out('tEta',hhmm(eta));
-  const until=(ok,mins)=>ok&&mins>=0?hhmm(new Date(eta.getTime()+Math.floor(mins)*60000)):'—';
-  out('tHoldLand',until(landDiffBook>=0,holdLandBook));out('tHoldLandS',landDiffBook>=0?Math.floor(holdLandBook)+' min after arrival · reserve only':'below minimum');
-  out('tHoldReturn',hasReturn?until(returnDiff>=0,holdReturn):'—');out('tHoldReturnS',!hasReturn?'no return entered':(returnDiff>=0?'then depart for the departure AD':'return not available'));
-  out('tHoldAlt',hasAlt?until(altDiff>=0,holdAlt):'—');out('tHoldAltS',!hasAlt?'no alternate entered':(altDiff>=0?'then divert':'alternate not available'));
-  const raw=String(fields.tafEndZ||'').replace(/[^0-9]/g,'');
-  const el=q('[data-out="tTaf"]');
-  if(raw.length!==4){out('tTaf','Enter the end of the TAF INTER / TEMPO period (UTC, HHMM) to see whether you can hold it out at the destination.');el.forEach(e=>e.className='tafRes');return;}
-  const hh=Number(raw.slice(0,2)),mm=Number(raw.slice(2));
-  if(hh>23||mm>59){out('tTaf','Time must be HHMM UTC.');el.forEach(e=>e.className='tafRes');return;}
-  let end=new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate(),hh,mm));
-  if(end.getTime()<now.getTime()-6*3600000)end=new Date(end.getTime()+86400000);     // period ends tomorrow UTC
-  const needMin=Math.ceil((end.getTime()-eta.getTime())/60000);
-  if(needMin<=0){out('tTaf','INTER / TEMPO ends '+raw+'Z = '+hhmm(end)+' local, before your ETA '+hhmm(eta)+' — no holding needed for it.');el.forEach(e=>e.className='tafRes ok');return;}
-  const have=landDiffBook>=0?Math.floor(holdLandBook):0;
-  const haveRet=hasReturn&&returnDiff>=0?Math.floor(holdReturn):null;
-  let msg='INTER / TEMPO ends '+raw+'Z = '+hhmm(end)+' local → hold '+needMin+' min after arrival. Hold & land allows '+have+' min → '+(have>=needMin?'OK, you can wait it out':'NOT ENOUGH — short '+(needMin-have)+' min');
-  if(haveRet!==null)msg+='. With the return protected: '+haveRet+' min → '+(haveRet>=needMin?'OK':'cannot wait it out and still return');
-  out('tTaf',msg+'.');el.forEach(e=>e.className='tafRes '+(have>=needMin?'ok':'bad'));
-}
 // ---------- alternate / holding helper (feature 8)
 function renderAltCheck(){
   const reasonsAlt=[],reasonsHold=[];
@@ -777,7 +741,6 @@ function calc(){
   renderLadder(dayInfo,reserve,hold,APP);
   renderPreflight(dayInfo,reserve,hold,APP,CMIN);
   renderPnr(reserve,APP);
-  renderTiming(destMin,holdLandBook,landDiffBook,holdReturn,returnDiff,hasReturn,holdAlt,altDiff,hasAlt);
   renderAltCheck();
   outHtml('dayLoaded',day.loadedMsg||(dayOn?'Tap <b>FLYING NOW</b> on the sector you are about to fly (or are flying) to load it into the Phase Deck.':'Enter the day\'s sectors above. Sector 1 is current until you tap FLYING NOW on another.'));
   root.querySelectorAll('[data-out="dayLoaded"] [data-goto]').forEach(b=>{if(!b.dataset.bound){b.dataset.bound='1';b.addEventListener('click',()=>{showView('phase');window.scrollTo(0,0);});}});
@@ -1144,7 +1107,6 @@ function start(hotData){
   if(state.ui==='day'||state.ui==='phase'||state.ui==='descent')showView(state.ui);
   calc();
   lastSaved='';persist();
-  setInterval(()=>{try{calc();}catch(e){}},60000);          // minute tick for the clock
 }
 try{(window.claude&&window.claude.hot&&window.claude.hot.ready)?window.claude.hot.ready(start):start(window.claude&&window.claude.hot?window.claude.hot.data:null);}catch(e){start(null);}
 })();
