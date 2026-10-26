@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="theme-color" content="#070d14"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-180.png"><title>Fuel & Holding — Phase Deck + Day Plan + Descent v22.22</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="theme-color" content="#070d14"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-180.png"><title>Fuel & Holding — Phase Deck + Day Plan + Descent v22.23</title><style>
 :root{--bg:#070d14;--text:#f5f7fa;--muted:#b7c3d1;--border:#34495f;--panel:#101b29;--card:#172638;--accent:#f0a11b;--accentbg:#4b350d;--onaccent:#000;--ok:#4ecb8d;--warn:#e0a72f;--bad:#ff6b6b;--book:#7bd8ff;--field:#0b1522;color-scheme:dark}html[data-theme=sun]{--bg:#f4f6f9;--text:#0d1520;--muted:#3f4e60;--border:#b3bfcd;--panel:#ffffff;--card:#e6ecf3;--accent:#b86e00;--accentbg:#ffe2ad;--onaccent:#fff;--ok:#0b7a46;--warn:#8a5a00;--bad:#c62828;--book:#0b5f94;--field:#ffffff;color-scheme:light}*{box-sizing:border-box;min-width:0}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;-webkit-text-size-adjust:100%}body{padding:12px}button,input{font:inherit}button{-webkit-tap-highlight-color:transparent}.uiSwitch{display:grid;grid-template-columns:repeat(8,1fr);gap:7px;margin-bottom:10px}.uiSwitch button{min-height:50px;border:1px solid var(--border);border-radius:10px;background:transparent;color:var(--text);font-size:13px;font-weight:900;padding:8px}.uiSwitch button span{display:block;font-size:9px;color:var(--muted);font-weight:700;margin-top:3px}.uiSwitch button.on{background:var(--accentbg);border-color:var(--accent)}.view{display:none}.view.on{display:block}.header{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;flex-wrap:wrap;margin-bottom:10px}.title{font-size:20px;font-weight:950}.subtitle{font-size:10px;color:var(--muted);margin-top:2px}.panel{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:13px;margin-bottom:10px}.card{background:var(--card);border:1px solid var(--border);border-radius:11px;padding:11px}.decision{border-color:rgba(224,167,47,.6)}.sectionTitle,.k{font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}.sectionTitle{margin-bottom:9px}.v{font-size:26px;font-weight:950;line-height:1.05;margin-top:4px;overflow-wrap:anywhere}.hm{font-size:11px;font-weight:800;color:var(--muted);margin-top:4px}.detail{font-size:9px;line-height:1.3;color:var(--muted);margin-top:6px}.cons{font-size:9px;line-height:1.3;color:var(--warn);font-weight:900;margin-top:6px}.adv{font-size:9px;line-height:1.3;color:var(--book);font-weight:900;margin-top:4px}.redNote{font-size:9px;line-height:1.3;font-weight:900;color:var(--bad);margin-top:7px;padding-top:7px;border-top:1px solid var(--border)}.capabilityCallout{margin-top:8px;padding:8px;border:1px solid var(--accent);border-radius:8px;background:rgba(240,161,27,.10);font-size:9px;font-weight:900;line-height:1.3;color:var(--text)}
 .capTitle{font-size:9px;font-weight:950;color:var(--warn);text-transform:uppercase;margin-bottom:5px}
 .capRow{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:7px;align-items:center;padding:5px 0;border-top:1px solid rgba(224,167,47,.28)}
@@ -119,7 +119,7 @@ html[data-theme=sun] .status[data-tone=ok],html[data-theme=sun] .alert[data-tone
 @media print{@page{size:A4 portrait;margin:8mm}html,body{background:#fff!important;color:#000!important;padding:0!important;margin:0!important}#dualFuelUI>*:not(section[data-view=more]){display:none!important}section[data-view=more]{display:block!important}section[data-view=more]>.header,section[data-view=more] .moreGrid>section:not([data-ws-panel]){display:none!important}[data-ws-panel]>*:not(.wsWrap){display:none!important}[data-ws-panel]{border:0!important;padding:0!important;margin:0!important;background:#fff!important}.moreGrid{display:block!important}.wsWrap{display:block!important;margin:0!important}.ws{border:0;border-radius:0;overflow:visible;width:186mm;max-width:none}.ws .pg{width:186mm;height:auto;padding:0}.ws .g col.kc{width:92mm}.ws .pg:first-child{break-after:page}.ws .pg.pb{break-before:page}#swUpd{display:none!important}}
 /*WS-CSS-END*/
 </style></head><body><div id="dualFuelUI"><div class="uiSwitch"><button type="button" class="on" data-ui="phase">PHASE DECK<span>In-flight calculator</span></button><button type="button" data-ui="day">DAY PLAN<span>Multi-sector fuel ladder</span></button><button type="button" data-ui="descent">DESCENT<span>TOD, profile & configuration gates</span></button><button type="button" data-ui="glance">GLANCE<span>Decision numbers, large</span></button><button type="button" data-ui="hold">HOLD CLOCK<span>Countdown to decisions</span></button><button type="button" data-ui="recall">RECALL<span>Dep setup · AAI · approach configs</span></button><button type="button" data-ui="radio">RADIO<span>Call sequence by situation</span></button><button type="button" data-ui="more">MORE<span>Theme · copy summary</span></button></div>
-<div class="saveBar"><span class="verTag">v22.22</span><div class="saveMsg" data-out="saveStamp">—</div><button type="button" class="resetBtn" data-reset-all>RESET ALL</button><div class="resetConfirm" data-reset-confirm><span>Clear every input and the day plan?</span><button type="button" data-reset-yes>YES, RESET</button><button type="button" data-reset-no>KEEP</button></div></div>
+<div class="saveBar"><span class="verTag">v22.23</span><div class="saveMsg" data-out="saveStamp">—</div><button type="button" class="resetBtn" data-reset-all>RESET ALL</button><div class="resetConfirm" data-reset-confirm><span>Clear every input and the day plan?</span><button type="button" data-reset-yes>YES, RESET</button><button type="button" data-reset-no>KEEP</button></div></div>
 <section class="view on" data-view="phase">
 <div class="header"><div><div class="title">Phase Deck</div><div class="subtitle">Workflow organised by setup, destination decision, return, alternate and planned hold.</div></div><div class="status" data-out="status">—</div></div><div class="dayBanner" data-day-banner data-out="dayBanner">—</div>
 <div class="phaseSetup"><section class="panel"><div class="sectionTitle">1 · Aircraft / Current State</div><div class="inputGrid"><div class="fleetRow"><div><label>Variant</label><select data-select="variant"><option value="legacy">Legacy 370 / 300</option><option value="ex">EX 450 / 300</option><option value="blackhawk">Blackhawk 420 / 350</option></select></div><div><label>Operation</label><select data-select="ops"><option value="at" data-ops-at>Air Transport — 200 lb</option><option value="nonat" data-ops-nonat>Non-Air Transport — 275 lb</option></select></div></div><div><label>Fuel on board</label><div class="unitRow"><input data-field="fob"><div class="unit">lb</div></div></div><div><label>Cruise flow</label><div class="unitRow"><input data-field="cruise"><div class="unit">lb/hr</div></div></div><div><label>Holding flow</label><div class="unitRow"><input data-field="hold"><div class="unit">lb/hr</div></div></div><div><label>Final reserve (auto)</label><div class="unitRow"><input data-ro="reserve" disabled><div class="unit">lb</div></div></div></div></section><section class="panel"><div class="sectionTitle">2 · Route Requirements</div><div class="inputGrid"><div class="routeCoreRow"><div><label>Total destination leg time <span class="autoTag">OPTIONAL</span></label><div class="unitRow"><input data-field="totalLegMin" type="number" min="0" step="1" placeholder="optional"><div class="unit">min</div></div><div class="detail">Optional — 10% contingency basis for the amber figures. Blank = from time to run (min <span data-out="contMinLbl">25</span> lb).</div></div>
@@ -410,7 +410,7 @@ html[data-theme=sun] .status[data-tone=ok],html[data-theme=sun] .alert[data-tone
 <div class="header"><div><div class="title">More</div><div class="subtitle">Display theme · copy the current plan as text</div></div></div>
 <div class="moreGrid">
 <section class="panel"><div class="sectionTitle">Display</div><div class="seg two themeSeg" data-choice="theme"><button data-val="night">NIGHT<small>Dark cockpit (default)</small></button><button data-val="sun">BRIGHT SUN<small>High-contrast light</small></button></div></section>
-<section class="panel"><div class="sectionTitle">Copy the current plan as text</div><div class="detail" style="margin-bottom:8px">Phase Deck figures, the day plan ladder, pre-flight minimum and descent plan as they stand now — for the nav log or a message to ops.</div><div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px"><button type="button" class="pkgEdit" data-copy-summary>COPY TO CLIPBOARD</button><div class="detail" data-out="copyMsg" style="align-self:center;margin:0">—</div></div><textarea class="summaryTa" data-summary-text readonly></textarea></section>
+<section class="panel"><div class="sectionTitle">Copy the fuel check record as text</div><div class="detail" style="margin-bottom:8px">The current figures written up as an in-flight fuel check record: every line shows the arithmetic and the Part A / FCOM reference, so it reads on its own in a nav log, a message to ops or an audit file.</div><div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px"><button type="button" class="pkgEdit" data-copy-summary>COPY TO CLIPBOARD</button><div class="detail" data-out="copyMsg" style="align-self:center;margin:0">—</div></div><textarea class="summaryTa" data-summary-text readonly></textarea></section>
 <section class="panel" data-ws-panel><div class="sectionTitle">Printable in-flight fuel check &amp; top-of-descent leg sheet — company method</div><div class="detail">A4 page 1 = two identical A5 panels (cut along the dashed line), four legs each, with the Part A §6.4.5.2 in-flight fuel check, the FCOM §8.5.3 top-of-descent lines and the IFR taxi / departure radio calls pre-printed — you fill in the gaps (minimum fuel at engine start stays in the EFB). Page 2 = the FCOM §7.1.1 figure table and the written explainer tied to the manual paragraphs, with a worked example. OPEN PAGE VERSION shows the sheet as its own page with a BACK button; on an iPad home-screen app the print dialog is not available, so to print it open that page in Safari (the address is shown on it) and use Share → Print or Save to Files as PDF.</div>
 <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;align-items:center"><button type="button" class="pkgEdit" data-ws-toggle>SHOW SHEET</button><button type="button" class="pkgEdit" data-ws-print>PRINT / SAVE PDF</button><a class="pkgEdit" data-ws-link href="worksheet.html" style="display:none;text-decoration:none;line-height:46px">OPEN PAGE VERSION ▸</a></div>
 <div class="wsWrap" data-ws-wrap style="display:none;margin-top:10px">
@@ -832,27 +832,78 @@ const last={};
 function fmtMin(m){return m>=0?Math.floor(m)+' min':'SHORT';}
 function buildSummary(){
   const L=last;if(!L.ready)return '';
-  const d=new Date();const stamp=d.getDate()+'/'+(d.getMonth()+1)+' '+String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');
-  const lines=[];
-  lines.push('FUEL & HOLDING — '+stamp+' local');
-  lines.push(L.variant+' · '+(L.ops==='at'?'Air Transport':'Non-air-transport')+' · reserve '+L.reserve+' lb · approach '+L.APP+' lb · hold '+L.hold+' lb/hr');
-  lines.push('');
-  lines.push('PHASE DECK');
-  lines.push('FOB '+Math.round(L.FOB)+' lb · '+L.destMin+' min to run @ '+L.cruise+' lb/hr → overhead '+Math.round(L.destFuel)+' lb');
-  lines.push('Landing decision '+Math.round(L.landBook)+' lb ('+L.reserve+' reserve'+(L.appFuel?' + '+L.APP+' approach':'')+(L.continueFuel>0?' + '+Math.round(L.continueFuel)+' to finish the day':'')+') · conservative '+Math.round(L.landCons)+' lb');
-  lines.push('Hold & land '+fmtMin(L.holdLandBook)+' (contingency protected '+fmtMin(L.holdLandCons)+')');
-  lines.push(L.hasReturn?'Return package '+Math.round(L.returnCore)+' lb ('+Math.round(L.returnTrip)+' trip + '+L.arrApps+' arrival app + '+L.reserve+' reserve'+(L.returnHoldMin?' + '+L.returnHoldMin+' min hold':'')+(L.disc?' + 20 min discretion':'')+(L.cns?' + CNS/TSV 10 min':'')+') · '+L.returnApps+' approach(es) here first → return decision '+Math.round(L.returnDecision)+' lb · hold then return '+fmtMin(L.holdReturn):'Return: not entered');
-  lines.push(L.hasAlt?'Alternate '+Math.round(L.altDecision)+' lb ('+Math.round(L.altTrip)+' trip + '+L.altHoldMin+' min hold + '+L.altApps+' app + '+L.reserve+' reserve) · hold then alternate '+fmtMin(L.holdAlt):'Alternate: none');
-  lines.push('Minimum fuel line '+Math.round(L.minFuel)+' lb overhead (reserve + one approach)');
+  const d=new Date();const p2=v=>String(v).padStart(2,'0');
+  const local=p2(d.getDate())+'/'+p2(d.getMonth()+1)+'/'+d.getFullYear()+' '+p2(d.getHours())+':'+p2(d.getMinutes())+' local';
+  const utc=p2(d.getUTCHours())+':'+p2(d.getUTCMinutes())+' UTC';
+  const n=v=>Math.round(v).toLocaleString('en-AU');
+  const lbm=(L.hold/60).toFixed(1), crm=(L.cruise/60).toFixed(1);
+  const minsOf=lb=>Math.max(0,Math.floor(lb/L.hold*60));
+  const ver=(root.querySelector('.verTag')||{}).textContent||'';
+  const burn=Math.round(L.FOB-L.destFuel), OH=Math.round(L.FOB)-burn, cont=Math.max(0,L.landCons-L.landBook);
+  const appsPossible=Math.max(0,Math.floor((OH-L.reserve+.001)/L.APP));
+  const pl=(k,w)=>k+' '+w+(k===1?'':'es');
+  let sec=0;const H=t=>{sec++;o.push(sec+'. '+t);};
+  const o=[];
+  o.push('IN-FLIGHT FUEL CHECK RECORD — company method (HAV FOM Part A 6.4.5.2; figures FCOM 7.1.1)');
+  o.push('Recorded '+local+' ('+utc+')');
+  o.push('Aircraft type: '+L.variant+' · Operation: '+(L.ops==='at'?'Air Transport':'Non-air-transport'));
+  o.push('Fixed figures used: final reserve '+L.reserve+' lb · approach allowance '+L.APP+' lb · holding rate '+L.hold+' lb/hr ('+lbm+' lb/min) · cruise rate '+L.cruise+' lb/hr ('+crm+' lb/min)');
+  o.push('');
+  H('FUEL STATE NOW');
+  o.push('   Fuel on board (gauges and totaliser reconciled): '+n(L.FOB)+' lb');
+  o.push('   Time to run to destination: '+L.destMin+' min');
+  o.push('   Burn to destination: '+L.destMin+' min x '+crm+' lb/min = '+n(burn)+' lb');
+  o.push('   Expected fuel overhead destination: '+n(L.FOB)+' - '+n(burn)+' = '+n(OH)+' lb');
+  o.push('');
+  H('LANDING AT DESTINATION — final reserve protected (Part A 6.4.5.2 step 3(a))');
+  o.push('   Final reserve, must remain in tanks after landing: '+L.reserve+' lb');
+  o.push('   Approach allowance at destination: '+(L.appFuel?L.APP+' lb (IAP / STAR / night visual)':'0 lb (day visual approach)'));
+  if(L.continueFuel>0)o.push('   Fuel to be kept after landing for the later sectors of the day: '+n(L.continueFuel)+' lb');
+  o.push('   Fuel required at landing: '+n(L.landBook)+' lb');
+  o.push('   Fuel available for holding at destination: '+n(OH)+' - '+n(L.landBook)+' = '+n(OH-L.landBook)+' lb = '+(OH-L.landBook>=0?minsOf(OH-L.landBook)+' min at '+lbm+' lb/min':'NIL (short '+n(L.landBook-OH)+' lb)'));
+  o.push('   If contingency fuel ('+n(cont)+' lb = 10% of trip, minimum '+(L.variant.includes('Legacy')?'25':'30')+' lb) is also kept intact: '+(OH-L.landCons>=0?minsOf(OH-L.landCons)+' min':'NIL'));
+  o.push('   Approaches possible before reaching the final reserve: ('+n(OH)+' - '+L.reserve+') / '+L.APP+' = '+appsPossible);
+  o.push('   Minimum fuel line: reserve + one approach = '+n(L.minFuel)+' lb overhead -> one approach and land; a clearance that would take the aircraft below the final reserve -> MINIMUM FUEL; calculated landing fuel below the final reserve -> MAYDAY FUEL (Part A 5.21)');
+  o.push('');
+  H('RETURN TO DEPARTURE AERODROME — company alternate method (Part A 6.4.3(f): trip + approach + holding + reserve, no contingency)');
+  if(L.hasReturn){
+    const arrApp=L.arrApps*L.APP, hfuel=L.returnHoldMin*L.hold/60, dfuel=L.disc?20*L.hold/60:0, cfuel=L.cns?10*L.hold/60:0, destApps=L.returnApps*L.APP;
+    o.push('   Return trip fuel (destination to departure aerodrome): '+n(L.returnTrip)+' lb (about '+Math.round(L.returnTrip/L.cruise*60)+' min at '+L.cruise+' lb/hr)');
+    o.push('   Arrival approaches at departure aerodrome: '+L.arrApps+' x '+L.APP+' lb = '+n(arrApp)+' lb');
+    o.push('   Holding required at departure aerodrome: '+(L.returnHoldMin?(L.returnHoldMin===30?'INTER 30 min':'TEMPO 60 min')+' = '+n(hfuel)+' lb':'none'));
+    o.push('   Pilot discretion: '+(L.disc?'20 min = '+n(dfuel)+' lb':'none')+' · Cairns / Townsville 10 min: '+(L.cns?n(cfuel)+' lb':'not applicable'));
+    o.push('   Final reserve: '+L.reserve+' lb');
+    o.push('   Return package (fuel needed overhead destination to get home): '+n(L.returnCore)+' lb');
+    o.push('   Approaches planned at destination before returning: '+L.returnApps+' x '+L.APP+' lb = '+n(destApps)+' lb');
+    o.push('   Return decision fuel: '+n(L.returnCore)+' + '+n(destApps)+' = '+n(L.returnDecision)+' lb overhead');
+    o.push('   Result: '+(OH-L.returnDecision>=0?'RETURN AVAILABLE — holding available before the return must begin: ('+n(OH)+' - '+n(L.returnDecision)+') / '+lbm+' = '+minsOf(OH-L.returnDecision)+' min':'RETURN NOT AVAILABLE with '+pl(L.returnApps,'approach')+' here — short '+n(L.returnDecision-OH)+' lb'));
+  }else o.push('   Not entered — no return option computed.');
+  o.push('');
+  H('ALTERNATE — holding before diversion (Part A 6.4.5.2 step 3(b))');
+  if(L.hasAlt){
+    o.push('   Alternate fuel required: trip '+n(L.altTrip)+' lb + holding '+L.altHoldMin+' min ('+n(L.altHoldMin*L.hold/60)+' lb) + '+pl(L.altApps,'approach')+' x '+L.APP+' lb + final reserve '+L.reserve+' lb = '+n(L.altDecision)+' lb (no contingency)');
+    o.push('   Result: '+(OH-L.altDecision>=0?'ALTERNATE AVAILABLE — holding available before diversion: ('+n(OH)+' - '+n(L.altDecision)+') / '+lbm+' = '+minsOf(OH-L.altDecision)+' min':'ALTERNATE NOT AVAILABLE — short '+n(L.altDecision-OH)+' lb'));
+  }else o.push('   No alternate nominated.');
   if(L.day&&L.day.active){
-    lines.push('');lines.push('DAY PLAN — sector '+(L.day.cur+1)+' of '+L.day.n+' flying now');
-    L.day.secs.forEach((x,i)=>{lines.push((i+1)+'. → '+x.to+': burn '+Math.round(x.burn)+(x.app?' + app':'')+(x.holdMin?' + '+x.holdMin+' min hold':'')+(x.extra?' + extra '+Math.round(x.extra):'')+(x.refuel?' · FUEL AVAILABLE':'')+' · min FOB to depart '+Math.round(L.day.R[i])+' lb'+(i>=L.day.cur&&!isNaN(L.day.pLand[i])?' · est after landing '+Math.round(L.day.pLand[i])+' lb':''));});
-    if(L.pre)lines.push('Pre-flight minimum at engine start '+Math.round(L.pre.min)+' lb · FOB '+Math.round(L.pre.FOB)+' lb · uplift '+(L.pre.uplift>0?Math.round(L.pre.uplift)+' lb ≈ '+Math.round(L.pre.uplift/1.74)+' L':'none'));
+    o.push('');H('DAY PLAN — multi-sector fuel ladder (sector '+(L.day.cur+1)+' of '+L.day.n+' flying now)');
+    L.day.secs.forEach((x,i)=>{o.push('   Sector '+(i+1)+' to '+(x.to||'?')+': burn '+n(x.burn)+' lb'+(x.app?' + approach':'')+(x.holdMin?' + '+x.holdMin+' min holding':'')+(x.extra?' + extra '+n(x.extra)+' lb':'')+(x.refuel?' · fuel available at this stop':'')+' · minimum fuel to depart '+n(L.day.R[i])+' lb'+(i>=L.day.cur&&!isNaN(L.day.pLand[i])?' · expected after landing '+n(L.day.pLand[i])+' lb':''));});
+    if(L.pre)o.push('   Pre-flight minimum at engine start (Part A 6.4.4.1): '+n(L.pre.min)+' lb · fuel on board '+n(L.pre.FOB)+' lb · uplift '+(L.pre.uplift>0?n(L.pre.uplift)+' lb (about '+n(L.pre.uplift/1.74)+' L)':'none required'));
   }
-  if(L.desc){const D=L.desc;lines.push('');lines.push('DESCENT — '+{straight:'straight-in visual',circuit:'circuit join',iap:'instrument approach'}[D.t]+' · '+Math.round(D.cruiseAlt)+' ft → elev '+Math.round(D.elev)+' ft · GS '+D.gs+' kt');lines.push('TOD '+D.tod.toFixed(1)+' nm to run · '+Math.round(D.loss)+' ft to lose · '+Math.round(D.descMin)+' min at 500 ft/min · '+D.nmPer1000.toFixed(1)+' nm per 1,000 ft · descent torque '+D.torque);}
-  if(L.hc){lines.push('');lines.push('HOLD CLOCK — in the hold since '+L.hc.started+' · FOB now ~'+L.hc.fobNow+' lb');L.hc.rows.forEach(r=>lines.push((r.left<0?'EXPIRED ':'')+r.name+' — '+r.by+(r.left<0?' ('+(-r.left)+' min ago)':' ('+r.left+' min left)')));}
-  lines.push('');lines.push('Planning aid — verify against aircraft indications and current manuals (FOM Part A 6.4, FCOM 7.1.1).');
-  return lines.join('\n');
+  if(L.desc){const D=L.desc;o.push('');H('DESCENT PLAN (FCOM 8.5.3)');
+    o.push('   '+{straight:'Straight-in visual approach',circuit:'Circuit join',iap:'Instrument approach'}[D.t]+' · cruise '+n(D.cruiseAlt)+' ft · aerodrome elevation '+n(D.elev)+' ft · groundspeed '+D.gs+' kt');
+    o.push('   Height to lose '+n(D.loss)+' ft · '+D.nmPer1000.toFixed(1)+' nm per 1,000 ft (GS / 30) · top of descent at '+D.tod.toFixed(1)+' nm to run · '+Math.round(D.descMin)+' min at 500 ft/min · descent torque '+n(D.torque)+' ft-lb');}
+  if(L.hc){o.push('');H('HOLDING IN PROGRESS');o.push('   In the hold since '+L.hc.started+' · estimated fuel on board now '+n(L.hc.fobNow)+' lb');
+    L.hc.rows.forEach(r=>o.push('   '+(r.left<0?'EXPIRED: ':'')+r.name+' — by '+r.by+(r.left<0?' ('+(-r.left)+' min ago)':' ('+r.left+' min remaining)')));}
+  o.push('');H('DECISION SUMMARY');
+  o.push('   Land at destination: '+(OH-L.landBook>=0?'hold up to '+minsOf(OH-L.landBook)+' min, then land with the final reserve intact':'NOT ACHIEVABLE with the final reserve intact — re-plan to an alternate safe landing area'));
+  if(L.hasReturn)o.push('   Return to departure aerodrome: '+(OH-L.returnDecision>=0?'available — hold up to '+minsOf(OH-L.returnDecision)+' min, then '+pl(L.returnApps,'approach')+' here and return':'not available with '+pl(L.returnApps,'approach')+' here'));
+  if(L.hasAlt)o.push('   Divert to alternate: '+(OH-L.altDecision>=0?'available — hold up to '+minsOf(OH-L.altDecision)+' min, then divert':'not available'));
+  o.push('   Act at '+n(L.minFuel)+' lb overhead (reserve + one approach): one approach and land.');
+  o.push('   Figures rounded to the nearest pound; minutes rounded down.');
+  o.push('');
+  o.push('Method: HAV.FOM.A.15 Part A 6.4 Company Fuel Policy (14 Oct 2025) and HAV.FOM.B1.04 FCOM 7.1.1 (16 Jul 2025). Computed with the Fuel & Holding app '+ver+' from the figures entered by the pilot in command; a planning aid only — the PIC verifies against aircraft fuel indications and the current manuals.');
+  o.push('PIC: ____________________   Aircraft: ________   Flight: ________');
+  return o.join('\n');
 }
 // ---------- HOLD CLOCK (live countdown to each decision while holding) ----------
 const hhmm=d=>String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');

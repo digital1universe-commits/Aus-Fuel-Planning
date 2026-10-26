@@ -1,5 +1,5 @@
 // Fuel & Holding — offline cache. Serves the app from cache first, refreshes in the background when online.
-const CACHE='fuel-holding-v22.22';
+const CACHE='fuel-holding-v22.23';
 const SHELL=['./','./index.html','./worksheet.html','./manifest.webmanifest','./icon-180.png','./icon-512.png'];
 // shell files are fetched past the browser HTTP cache (GitHub Pages allows a 10-minute max-age) so an update really is the new version
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL.map(u=>new Request(u,{cache:'reload'})))).then(()=>self.skipWaiting()));});
